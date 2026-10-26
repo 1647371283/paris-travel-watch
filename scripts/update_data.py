@@ -15,6 +15,9 @@ SITE = ROOT / "site"
 OUTPUT = SITE / "data.json"
 MAX_FEED_BYTES = 1_500_000
 EVENT_WINDOW_DAYS = 45
+TRIP_START_DATE = "2026-11-03"
+TRIP_END_DATE = "2026-11-09"
+TRIP_FOCUS_DATE = "2026-11-05"
 TRANSPORT_NOTICE = "Google News RSS search index; not a direct official alert feed"
 MONTHS = {
     "janvier": 1, "janv": 1, "jan": 1, "january": 1, "januar": 1,
@@ -65,15 +68,23 @@ BASE_FEEDS = [
     },
     {
         "id": "action_impacts",
-        "label": "交通及场馆影响信息",
+        "label": "交通运营影响信息",
         "query": "",
-        "official_domains": ["ratp.fr", "bonjour-ratp.fr", "iledefrance-mobilites.fr", "transilien.com"],
+        "official_domains": ["ratp.fr", "bonjour-ratp.fr", "iledefrance-mobilites.fr", "transilien.com", "sncf-connect.com"],
+    },
+    {
+        "id": "venue_impacts",
+        "label": "景点/场馆官方公告检索线索",
+        "query": "",
+        "official_domains": ["louvre.fr", "musee-orsay.fr", "musee-orangerie.fr", "centrepompidou.fr", "toureiffel.paris", "sainte-chapelle.fr"],
     },
 ]
+COLLECTIVE_CATEGORIES = {"demonstration", "yellow-vest", "strike"}
 EVENT_WORDS = re.compile(r"manifestation|rassemblement|mobilisation|gr[eè]ve|strike|protest|demonstration|yellow vest|gilet jaune|blocage|march[eé]", re.I)
 ROUTE_WORDS = re.compile(r"itin[eé]raire|parcours|route|procession|d[eé]part|departure|point de rendez-vous", re.I)
 TRANSPORT_WORDS = re.compile(r"(?<!\w)(?:ratp|m[eé]tros?|rer|transilien|sncf|stations?|ligne|trafic|transport|train|bus|tram|fermeture|ferm[eé]|closed|closure|perturb\w*)(?!\w)", re.I)
-VENUE_WORDS = re.compile(r"mus[eé]e|louvre|orsay|orangerie|monument|ch[aâ]teau|tour eiffel|attraction|concert|spectacle|ferm[eé]|fermeture|closed|closure", re.I)
+VENUE_WORDS = re.compile(r"mus[eé]e|louvre|orsay|orangerie|pompidou|monument|ch[aâ]teau|tour eiffel|sainte[- ]chapelle|attraction|concert|spectacle|ferm[eé]|fermeture|closed|closure|ouverture|open|access", re.I)
+VENUE_NAMES = re.compile(r"louvre|mus[eé]e d.?orsay|orsay|orangerie|pompidou|tour eiffel|eiffel tower|sainte[- ]chapelle|versailles|arc de triomphe|invalides|montmartre", re.I)
 
 
 def now_iso():
@@ -102,7 +113,8 @@ def build_feeds(now):
         "news": f'Paris (manifestation OR violences OR emeutes OR greve OR transport) ({month_terms})',
         "action_dates": f'Paris (manifestation OR rassemblement OR mobilisation OR greve OR strike) ({month_terms}) date itineraire parcours Paris',
         "action_routes": f'site:prefecturedepolice.interieur.gouv.fr Paris manifestation (itineraire OR parcours OR rassemblement) ({month_terms}) arrete',
-        "action_impacts": f'(site:ratp.fr OR site:bonjour-ratp.fr OR site:iledefrance-mobilites.fr OR site:transilien.com) Paris manifestation fermeture station ({month_terms}) musee ferme',
+        "action_impacts": f'(site:ratp.fr OR site:bonjour-ratp.fr OR site:iledefrance-mobilites.fr OR site:transilien.com OR site:sncf-connect.com) Paris manifestation fermeture station greve ({month_terms})',
+        "venue_impacts": f'(site:louvre.fr OR site:musee-orsay.fr OR site:musee-orangerie.fr OR site:centrepompidou.fr OR site:toureiffel.paris OR site:sainte-chapelle.fr) (fermeture OR fermé OR fermeture exceptionnelle OR closed OR opening OR accès) Paris ({month_terms})',
     }
     for feed in feeds:
         if feed["id"] in queries:
@@ -308,11 +320,168 @@ def event_field(items, pattern, official_only=False):
         if pattern.search(normalize_text(combined_text)):
             matches.append(item)
     if not matches:
-        return {"status": "待核实", "value": "标题中没有匹配到相关细节；请打开原文及当天官方公告核对。", "evidence": []}
+        return {"status": "待核实", "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。", "evidence": []}
     return {
         "status": "官方域名标题/摘要线索，尚未核验原文" if official_only else "新闻索引标题/摘要线索，尚未核验原文",
         "value": "检索标题/摘要关键词线索；本站未打开或核验原文正文，不代表路线、交通或场馆影响已经确认。",
         "evidence": [{"title": item.get("title", ""), "description": item.get("description", ""), "source": item.get("source", ""), "url": item.get("link", ""), "officialDomainMatch": bool(item.get("publisherDomainMatchesOfficial")), "currentFeedSuccess": bool(item.get("_feedOk")), "lastSuccessAt": item.get("_lastSuccessAt", "")} for item in matches[:4]],
+    }
+
+
+def annotate_item(feed, source_item):
+    return {
+        **source_item,
+        "_feedOk": bool(feed.get("ok")),
+        "_lastSuccessAt": feed.get("lastSuccessAt") or (feed.get("checkedAt", "") if feed.get("ok") else ""),
+    }
+
+
+def feed_status(feeds, feed_ids):
+    return [
+        {
+            "id": feed.get("id", ""),
+            "label": feed.get("label", ""),
+            "ok": bool(feed.get("ok")),
+            "checkedAt": feed.get("checkedAt", ""),
+            "lastSuccessAt": feed.get("lastSuccessAt") or (feed.get("checkedAt", "") if feed.get("ok") else ""),
+            "itemCount": len(feed.get("items", [])),
+            "error": feed.get("error", ""),
+        }
+        for feed in feeds
+        if feed.get("id") in feed_ids
+    ]
+
+
+def dated_items(feeds, target_date, today, feed_ids):
+    matches = []
+    for feed in feeds:
+        if feed.get("id") not in feed_ids:
+            continue
+        for source_item in feed.get("items", []):
+            item = annotate_item(feed, source_item)
+            combined_text = " ".join((item.get("title", ""), item.get("description", "")))
+            if target_date in event_dates(combined_text, item.get("publishedAt", ""), today):
+                matches.append(item)
+    return matches
+
+
+def no_signal_field(feeds, feed_ids, clear_text, failure_text):
+    relevant = [feed for feed in feeds if feed.get("id") in feed_ids]
+    failed = [feed for feed in relevant if not feed.get("ok")]
+    if failed:
+        return {
+            "status": "来源刷新失败，无法判断",
+            "value": failure_text + "；请打开对应官方公告核对。",
+            "evidence": [],
+        }
+    return {
+        "status": "未检索到当天确认线索",
+        "value": clear_text,
+        "evidence": [],
+    }
+
+
+def dated_field(feeds, target_date, today, feed_ids, pattern, official_only, clear_text, failure_text):
+    items = dated_items(feeds, target_date, today, feed_ids)
+    field = event_field(items, pattern, official_only=official_only)
+    if field.get("evidence"):
+        return field
+    return no_signal_field(feeds, feed_ids, clear_text, failure_text)
+
+
+def derive_trip_monitor(feeds, events, generated_at):
+    try:
+        today = datetime.fromisoformat(generated_at.replace("Z", "+00:00")).astimezone(timezone.utc).date()
+    except (AttributeError, ValueError):
+        today = datetime.now(timezone.utc).date()
+
+    start = date.fromisoformat(TRIP_START_DATE)
+    end = date.fromisoformat(TRIP_END_DATE)
+    days = []
+    cursor = start
+    while cursor <= end:
+        target = cursor.isoformat()
+        day_events = [event for event in events if event.get("date") == target]
+        collective_events = [event for event in day_events if event.get("category") in COLLECTIVE_CATEGORIES]
+        if collective_events:
+            collective = {
+                "status": "有集体游行/罢工日期线索",
+                "value": "；".join(event.get("label", "集体行动线索") for event in collective_events),
+                "events": [
+                    {
+                        "id": event.get("id", ""),
+                        "category": event.get("category", ""),
+                        "label": event.get("label", "集体行动线索"),
+                        "status": event.get("status", "待核实"),
+                        "sources": event.get("sources", []),
+                    }
+                    for event in collective_events
+                ],
+            }
+        else:
+            action_sources = ["police", "action_dates", "action_routes", "news"]
+            source_failed = any(not feed.get("ok") for feed in feeds if feed.get("id") in action_sources)
+            collective = {
+                "status": "来源刷新失败，无法判断" if source_failed else "暂未检索到集体行动日期线索",
+                "value": "行动源本轮有失败，请打开警方及媒体来源核对。" if source_failed else "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+                "events": [],
+            }
+
+        transport = dated_field(
+            feeds,
+            target,
+            today,
+            ["transport", "action_impacts"],
+            TRANSPORT_WORDS,
+            False,
+            "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+            "交通信息源本轮刷新失败，无法判断当天线路状态",
+        )
+        venue_official = dated_field(
+            feeds,
+            target,
+            today,
+            ["venue_impacts"],
+            VENUE_WORDS,
+            True,
+            "暂未检索到当天官方景点/场馆关闭或营业变化线索；不等于保证开放。",
+            "景点/场馆官方信息源本轮刷新失败，无法判断当天开放状态",
+        )
+        if venue_official.get("evidence"):
+            venues = venue_official
+        else:
+            venues = dated_field(
+                feeds,
+                target,
+                today,
+                ["venue_impacts", "action_impacts", "news"],
+                VENUE_WORDS,
+                False,
+                "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+                "景点/场馆相关信息源本轮刷新失败，无法判断当天影响",
+            )
+
+        days.append({
+            "date": target,
+            "focus": target == TRIP_FOCUS_DATE,
+            "collective": collective,
+            "transport": transport,
+            "venues": {**venues, "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"},
+            "sourceStatus": {
+                "collective": feed_status(feeds, ["police", "action_dates", "action_routes", "news"]),
+                "transport": feed_status(feeds, ["transport", "action_impacts"]),
+                "venues": feed_status(feeds, ["venue_impacts"]),
+            },
+        })
+        cursor += timedelta(days=1)
+
+    return {
+        "startDate": TRIP_START_DATE,
+        "endDate": TRIP_END_DATE,
+        "focusDate": TRIP_FOCUS_DATE,
+        "updatedAt": generated_at,
+        "priority": "集体游行/罢工优先；每天同时检查交通和景点/场馆影响",
+        "days": days,
     }
 
 
@@ -365,6 +534,8 @@ def derive_events(feeds, generated_at):
             "districts": event_field(items, re.compile(r"\b(?:paris\s*)?(?:1(?:er|st)|(?:[2-9]|1[0-9]|20)(?:e|eme|th)?)(?:\s*arrondissement)?\b|\barrondissement\s*(?:de\s*)?(?:paris\s*)?(?:1(?:er|st)|[2-9]|1[0-9]|20)\b", re.I), official_only=True),
             "transport": event_field(items, TRANSPORT_WORDS),
             "venues": event_field(items, VENUE_WORDS),
+            "venueOfficial": event_field(items, VENUE_NAMES, official_only=True),
+            "venueWatchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特",
             "sources": [{"title": item.get("title", ""), "source": item.get("source", ""), "url": item.get("link", ""), "publishedAt": item.get("publishedAt", ""), "officialDomainMatch": bool(item.get("publisherDomainMatchesOfficial")), "currentFeedSuccess": bool(item.get("_feedOk")), "lastSuccessAt": item.get("_lastSuccessAt", "")} for item in items[:6]],
         })
     return sorted(events, key=lambda event: (event["date"], event["category"]))
@@ -388,14 +559,17 @@ def main():
             feeds.append(result)
 
     events = derive_events(feeds, generated_at)
+    trip_monitor = derive_trip_monitor(feeds, events, generated_at)
     payload = {
         "generatedAt": generated_at,
-        "refreshAfterSeconds": 1800,
+        "trip": {"startDate": TRIP_START_DATE, "endDate": TRIP_END_DATE, "focusDate": TRIP_FOCUS_DATE},
+        "tripMonitor": trip_monitor,
+        "refreshAfterSeconds": 900,
         "cacheTtlSeconds": 120,
         "feeds": feeds,
         "events": events,
         "eventWindowDays": EVENT_WINDOW_DAYS,
-        "notice": "GitHub Pages 只能读取静态快照；GitHub Actions 计划每 30 分钟更新 data.json。页面打开时可手动刷新或定时读取新快照，关闭页面后不会后台推送。新闻来自 Google News RSS 搜索索引，并非警方或运营商官方实时警报。行动日期为标题线索自动整理；路线、时间、区域、交通及场馆影响未从原文/官方公告确认前均显示待核实。",
+        "notice": "GitHub Pages 只能读取静态快照；GitHub Actions 计划每 15 分钟更新 data.json。页面打开时可手动刷新或定时读取新快照，关闭页面后不会后台推送。集体游行、罢工和集会优先监控；每天同时检查交通运营与景点/场馆公告。新闻来自 Google News RSS 搜索索引，并非警方或运营商官方实时警报。行动日期为标题线索自动整理；路线、时间、区域、交通及场馆影响未从原文/官方公告确认前均显示待核实。",
         "staticSnapshot": True,
     }
     temporary = OUTPUT.with_suffix(".json.tmp")

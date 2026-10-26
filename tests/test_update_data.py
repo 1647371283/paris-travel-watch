@@ -39,6 +39,8 @@ class UpdateDataTests(unittest.TestCase):
         self.assertIn('"janvier 2027"', feeds["action_dates"]["query"])
         self.assertIn('"February 2027"', feeds["action_dates"]["query"])
         self.assertNotIn('"March 2027"', feeds["action_dates"]["query"])
+        self.assertIn("venue_impacts", feeds)
+        self.assertIn("louvre.fr", feeds["venue_impacts"]["query"])
 
     def test_event_aggregation_deduplicates_titles_and_labels_unverified_fields(self):
         generated_at = "2026-10-26T12:00:00Z"
@@ -64,6 +66,44 @@ class UpdateDataTests(unittest.TestCase):
         self.assertNotEqual(event["districts"]["status"], "待核实")
         self.assertEqual(event["transport"]["status"], "待核实")
         self.assertIn("待核实", event["status"])
+
+    def test_trip_monitor_has_all_days_and_focuses_november_5(self):
+        generated_at = "2026-10-26T12:00:00Z"
+        feeds = [
+            {"id": "action_dates", "label": "日期", "ok": True, "checkedAt": generated_at, "items": [
+                {"id": "strike", "title": "Strike Paris November 5", "description": "", "link": "https://news.example/strike", "source": "Media", "publishedAt": generated_at, "publisherDomainMatchesOfficial": False},
+            ]},
+            {"id": "venue_impacts", "label": "景点", "ok": True, "checkedAt": generated_at, "items": [
+                {"id": "louvre", "title": "Louvre fermé exceptionnellement November 5", "description": "", "link": "https://www.louvre.fr/notice", "source": "Louvre", "publishedAt": generated_at, "publisherDomainMatchesOfficial": True},
+            ]},
+            {"id": "transport", "label": "交通", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "action_impacts", "label": "交通影响", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "police", "label": "警方", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "action_routes", "label": "路线", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "news", "label": "新闻", "ok": True, "checkedAt": generated_at, "items": []},
+        ]
+        events = update_data.derive_events(feeds, generated_at)
+        monitor = update_data.derive_trip_monitor(feeds, events, generated_at)
+        self.assertEqual(len(monitor["days"]), 7)
+        focus = next(day for day in monitor["days"] if day["date"] == "2026-11-05")
+        self.assertTrue(focus["focus"])
+        self.assertEqual(focus["collective"]["status"], "有集体游行/罢工日期线索")
+        self.assertIn("卢浮宫", focus["venues"]["watchList"])
+        self.assertIn("Louvre", focus["venues"]["evidence"][0]["title"])
+
+    def test_trip_monitor_marks_failed_venue_source_as_unknown(self):
+        generated_at = "2026-10-26T12:00:00Z"
+        monitor = update_data.derive_trip_monitor([
+            {"id": "police", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "action_dates", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "action_routes", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "news", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "transport", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "action_impacts", "ok": True, "checkedAt": generated_at, "items": []},
+            {"id": "venue_impacts", "ok": False, "checkedAt": generated_at, "lastSuccessAt": "2026-10-25T12:00:00Z", "items": []},
+        ], [], generated_at)
+        focus = next(day for day in monitor["days"] if day["date"] == "2026-11-05")
+        self.assertEqual(focus["venues"]["status"], "来源刷新失败，无法判断")
 
     def test_generic_gathering_title_does_not_claim_a_route(self):
         generated_at = "2026-10-26T12:00:00Z"
@@ -114,7 +154,7 @@ class UpdateDataTests(unittest.TestCase):
             self.assertEqual(police["lastSuccessAt"], "2026-10-26T02:00:00Z")
             self.assertIn("刷新失败", police["error"])
             self.assertTrue(payload["staticSnapshot"])
-            self.assertEqual(payload["refreshAfterSeconds"], 1800)
+            self.assertEqual(payload["refreshAfterSeconds"], 900)
 
 
 if __name__ == "__main__":

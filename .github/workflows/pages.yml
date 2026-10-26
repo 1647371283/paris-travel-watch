@@ -6,7 +6,7 @@ on:
     paths-ignore:
       - "site/data.json"
   schedule:
-    - cron: "17,47 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:

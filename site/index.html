@@ -93,6 +93,22 @@
     .event-source { color: var(--teal); font-size: 11px; font-weight: 700; overflow-wrap: anywhere; }
     .event-source small { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; font-weight: 500; }
     .event-empty { grid-column: 1 / -1; padding: 20px; border: 1px dashed #cbd8d0; color: var(--muted); font-size: 13px; }
+    .daily-monitor { display: grid; gap: 10px; }
+    .daily-card { padding: 17px 19px; border: 1px solid var(--line); border-radius: 17px; background: var(--card); box-shadow: 0 7px 18px rgba(32, 57, 54, .03); }
+    .daily-card.focus { border-color: #d99a6f; box-shadow: 0 8px 24px rgba(193, 93, 46, .1); }
+    .daily-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .daily-date { font-size: 17px; font-weight: 800; letter-spacing: -.025em; }
+    .daily-date small { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; font-weight: 600; }
+    .daily-focus { padding: 5px 8px; border-radius: 999px; color: #8a4d2a; background: var(--orange-light); font-size: 10px; font-weight: 800; }
+    .daily-status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 13px; }
+    .daily-status { min-width: 0; padding: 10px; border-radius: 11px; background: #f4f7f4; }
+    .daily-status strong { display: block; color: #40565c; font-size: 10px; }
+    .daily-status span { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; overflow-wrap: anywhere; }
+    .daily-status em { display: block; margin-top: 5px; color: #8a5a35; font-size: 9px; font-style: normal; }
+    .daily-updated { margin: 10px 0 0; color: var(--muted); font-size: 10px; }
+    .daily-sources { margin-top: 8px; color: var(--muted); font-size: 9px; }
+    .daily-evidence { display: block; margin-top: 6px; color: var(--teal); font-size: 9px; font-weight: 700; overflow-wrap: anywhere; }
+    .daily-watch { display: block; margin-top: 5px; color: #6b7472; font-size: 9px; line-height: 1.45; }
     .callout { margin-top: 15px; padding: 11px 12px; border-left: 3px solid #d78951; border-radius: 0 10px 10px 0; background: #fff7f0; color: #604732; font-size: 11px; }
     .history-grid { display: grid; gap: 17px; }
     .history-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: 0 8px 22px rgba(32, 57, 54, .035); }
@@ -197,6 +213,8 @@
       .section-action { margin-top: 18px; font-size: 10px; }
       .event-grid { grid-template-columns: 1fr; gap: 10px; }
       .event-card { min-height: auto; padding: 17px; border-radius: 17px; }
+      .daily-status-grid { grid-template-columns: 1fr; }
+      .daily-card { padding: 15px; border-radius: 15px; }
       .event-card h3 { font-size: 18px; }
       .history-head { grid-template-columns: 64px 1fr; gap: 10px; padding: 17px 16px; }
       .history-date { font-size: 24px; }
@@ -273,10 +291,13 @@
       <div class="section-head">
         <div>
           <div class="section-label">Upcoming · 未来行动</div>
-          <h2 id="upcoming-title">按最新检索线索动态整理</h2>
-          <p>本区只展示标题中识别出的未来日期。日期、路线、集合时间、区域、交通和场馆信息均须以原文及当天官方公告核实；检索不到不代表没有行动。</p>
+          <h2 id="upcoming-title">集体行动优先，逐日检查行程</h2>
+          <p>11 月 3–9 日每天单独检查集体游行/罢工、交通和景点/场馆影响；11 月 5 日为重点日。状态按最新云端快照显示，未检索到不等于没有风险。</p>
         </div>
         <a class="section-action" href="#sources">查看官方来源 ↗</a>
+      </div>
+      <div id="dailyMonitor" class="daily-monitor" aria-live="polite">
+        <div class="event-empty">正在读取逐日监控…</div>
       </div>
       <div id="eventGrid" class="event-grid" aria-live="polite">
         <div class="event-empty">正在读取未来行动检索线索…</div>
@@ -381,7 +402,7 @@
             </button>
           </div>
         </div>
-        <div class="feed-note">自动读取：GitHub Actions 计划每 30 分钟生成新快照；页面打开时按快照设置读取，浏览器可限制后台标签页计时。关闭页面后不工作。通知需浏览器授权，仅对页面运行期间首次出现的检索结果作提示，不是官方紧急警报。</div>
+        <div class="feed-note">自动读取：GitHub Actions 约每 15 分钟生成新快照；页面打开时按快照设置读取，浏览器可限制后台标签页计时。关闭页面后不工作。通知需浏览器授权，仅对页面运行期间首次出现的检索结果作提示，不是官方紧急警报。</div>
         <div id="feedList" class="feed-list" aria-live="polite"><div class="feed-empty">正在加载检索结果…</div></div>
       </div>
     </section>
@@ -399,8 +420,11 @@
         <a class="source-link" href="https://www.ratp.fr/infos-trafic" target="_blank" rel="noopener"><span><strong>RATP 实时交通</strong><small>巴黎地铁、RER、公交与电车</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="source-link" href="https://www.iledefrance-mobilites.fr/le-reseau/infos-trafic" target="_blank" rel="noopener"><span><strong>Île-de-France Mobilités</strong><small>大巴黎公共交通服务信息</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="source-link" href="https://www.transilien.com/en/page-deplacements/info-trafic" target="_blank" rel="noopener"><span><strong>Transilien / SNCF</strong><small>巴黎大区铁路出行公告</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.louvre.fr/visiter" target="_blank" rel="noopener"><span><strong>卢浮宫官方</strong><small>营业时间、临时闭馆与入场安排</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.musee-orsay.fr/en/visit" target="_blank" rel="noopener"><span><strong>奥赛博物馆官方</strong><small>营业状态、预约与临时公告</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.musee-orangerie.fr/en" target="_blank" rel="noopener"><span><strong>橘园美术馆官方</strong><small>开放安排与预约要求</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.toureiffel.paris/en" target="_blank" rel="noopener"><span><strong>埃菲尔铁塔官方</strong><small>开放状态、入场与安全安排</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="source-link" href="https://fr.china-embassy.gov.cn/chn/lsfw/lsbhyhz/" target="_blank" rel="noopener"><span><strong>驻法国使馆 · 领事提醒</strong><small>中国公民安全与领事保护信息</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="source-link" href="https://www.bonjour-ratp.fr/en/actualites/" target="_blank" rel="noopener"><span><strong>Bonjour RATP 公告</strong><small>交通运营说明与线路服务更新</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
     </section>
 
@@ -424,7 +448,7 @@
 
     <footer class="footer">
       <p>巴黎出行观察 · 仅供旅行信息参考，不构成安全保证。请以警方、运营商及场馆当日公告为准。</p>
-      <p>GitHub Actions 计划每 30 分钟更新快照 · 页面打开时读取 · 不提供关闭网页后的后台推送</p>
+      <p>GitHub Actions 约每 15 分钟更新快照 · 页面打开时读取 · 不提供关闭网页后的后台推送</p>
     </footer>
   </main>
 
@@ -437,9 +461,10 @@
       const NOTIFY_KEY = "paris-travel-watch-notify-v1";
       const TRIP_START = "2026-11-03";
       const TRIP_END = "2026-11-09";
-      let refreshMs = 30 * 60 * 1000;
+      let refreshMs = 15 * 60 * 1000;
       const list = document.getElementById("feedList");
       const eventGrid = document.getElementById("eventGrid");
+      const dailyMonitor = document.getElementById("dailyMonitor");
       const tripSignals = document.getElementById("tripSignals");
       const dataBasis = document.getElementById("dataBasis");
       const state = document.getElementById("feedState");
@@ -484,7 +509,51 @@
         return `${parts.find(part => part.type === "year").value}-${parts.find(part => part.type === "month").value}-${parts.find(part => part.type === "day").value}`;
       }
 
-      function renderEvents(events, generatedAt, eventWindowDays = 45, offline = false) {
+      function renderDailyMonitor(tripMonitor, offline = false) {
+        dailyMonitor.replaceChildren();
+        const days = tripMonitor && Array.isArray(tripMonitor.days) ? tripMonitor.days : [];
+        if (!days.length) {
+          dailyMonitor.append(element("div", "event-empty", "当前快照没有逐日监控数据；请打开警方、交通运营商和景点官方公告。"));
+          return;
+        }
+        days.forEach(day => {
+          const card = element("article", "daily-card" + (day.focus ? " focus" : ""));
+          const head = element("div", "daily-head");
+          const dateParts = String(day.date || "").split("-");
+          const dateLabel = element("div", "daily-date", `${Number(dateParts[1])}月${Number(dateParts[2])}日`);
+          dateLabel.append(element("small", "", day.focus ? "行程重点日 · 11 月 5 日" : "行程日"));
+          head.append(dateLabel);
+          if (day.focus) head.append(element("span", "daily-focus", "重点关注"));
+          const statusGrid = element("div", "daily-status-grid");
+          const collective = day.collective || {};
+          const transport = day.transport || {};
+          const venues = day.venues || {};
+          [["集体游行/罢工", collective], ["交通影响", transport], ["景点/场馆", venues]].forEach(([label, field]) => {
+            const box = element("div", "daily-status");
+            box.append(element("strong", "", label));
+            const evidence = Array.isArray(field.evidence) ? field.evidence : [];
+            const evidenceText = evidence.map(item => item.title).filter(Boolean).slice(0, 2).join("；");
+            box.append(element("span", "", field.value || "待核实"));
+            box.append(element("em", "", field.status || "待核实"));
+            if (evidenceText) box.append(element("small", "daily-evidence", evidenceText));
+            if (label === "景点/场馆" && field.watchList) box.append(element("small", "daily-watch", "重点关注：" + field.watchList));
+            statusGrid.append(box);
+          });
+          const sourceGroups = day.sourceStatus || {};
+          const sourceSummary = Object.entries(sourceGroups).map(([key, feeds]) => {
+            const failed = (Array.isArray(feeds) ? feeds : []).filter(feed => !feed.ok).length;
+            const labels = { collective: "行动源", transport: "交通源", venues: "景点源" };
+            return `${labels[key] || key} ${failed ? `${failed} 个刷新失败` : "已刷新"}`;
+          }).join(" · ");
+          const updated = element("p", "daily-updated", `本轮快照：${safeDate(tripMonitor.updatedAt)}${offline ? " · 当前显示缓存" : ""}`);
+          const sources = element("p", "daily-sources", sourceSummary || "来源状态待提供");
+          card.append(head, statusGrid, updated, sources);
+          dailyMonitor.append(card);
+        });
+      }
+
+      function renderEvents(events, generatedAt, eventWindowDays = 45, tripMonitor = null, offline = false) {
+        renderDailyMonitor(tripMonitor, offline);
         eventGrid.replaceChildren();
         tripSignals.replaceChildren();
         const todayInParis = parisDate();
@@ -560,7 +629,7 @@
       }
 
       function render(payload, offline = false) {
-        renderEvents(payload && payload.events, payload && payload.generatedAt, payload && payload.eventWindowDays, offline);
+        renderEvents(payload && payload.events, payload && payload.generatedAt, payload && payload.eventWindowDays, payload && payload.tripMonitor, offline);
         dataBasis.textContent = payload && payload.generatedAt ? safeDate(payload.generatedAt) : "未知";
         list.replaceChildren();
         const feeds = Array.isArray(payload && payload.feeds) ? payload.feeds : [];
@@ -634,7 +703,7 @@
           const payload = await response.json();
           if (!Array.isArray(payload.feeds)) throw new Error("数据格式异常");
           storageSet(LOCAL_CACHE_KEY, JSON.stringify(payload));
-          refreshMs = Math.max(60 * 1000, Number(payload.refreshAfterSeconds || 1800) * 1000);
+          refreshMs = Math.max(60 * 1000, Number(payload.refreshAfterSeconds || 900) * 1000);
           const items = payload.feeds.flatMap(feed => feed.items || []);
           maybeNotify(items);
           const seen = getSeen();
