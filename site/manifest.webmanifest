@@ -1,0 +1,18 @@
+{
+  "name": "巴黎出行观察 · Paris Travel Watch",
+  "short_name": "巴黎出行观察",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f2",
+  "theme_color": "#12645c",
+  "description": "整理巴黎游行、骚乱与交通影响信息，区分官方公告、媒体报道和待核实行动号召。",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

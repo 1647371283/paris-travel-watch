@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="为巴黎旅客整理游行行动号召、官方交通公告与历史影响；区分已确认事实和媒体报道。">
+  <title>巴黎出行观察 · Paris Travel Watch</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #192b35;
+      --muted: #5a6c73;
+      --paper: #f5f6f2;
+      --card: #fffefa;
+      --line: #dbe2dc;
+      --teal: #12645c;
+      --teal-light: #e2f1eb;
+      --orange: #c15d2e;
+      --orange-light: #fbede3;
+      --blue-light: #eaf1f4;
+      --shadow: 0 18px 45px rgba(32, 57, 54, .07);
+      --radius: 22px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.55; }
+    a { color: inherit; }
+    button { font: inherit; }
+    .shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(245, 246, 242, .92); border-bottom: 1px solid rgba(219, 226, 220, .85); backdrop-filter: blur(14px); }
+    .topbar-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 750; letter-spacing: -.025em; }
+    .brand-mark { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 12px; background: var(--teal); color: white; }
+    .brand-mark svg { width: 20px; height: 20px; }
+    .brand-text small { display: block; color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: .15em; text-transform: uppercase; }
+    .nav { display: flex; align-items: center; gap: 5px; }
+    .nav a { padding: 9px 12px; color: var(--muted); text-decoration: none; border-radius: 999px; font-size: 13px; font-weight: 650; transition: background .18s ease, color .18s ease; }
+    .nav a:hover, .nav a:focus-visible { color: var(--teal); background: var(--teal-light); outline: none; }
+    .nav-live { display: inline-flex; align-items: center; gap: 8px; color: var(--teal) !important; background: var(--teal-light); }
+    .live-dot { width: 7px; height: 7px; background: #228571; border-radius: 50%; box-shadow: 0 0 0 4px rgba(34, 133, 113, .12); }
+    main { padding: 34px 0 68px; }
+    .hero { position: relative; overflow: hidden; display: grid; grid-template-columns: 1.08fr .92fr; gap: 28px; align-items: stretch; padding: clamp(26px, 5vw, 54px); border-radius: 30px; background: #e7eee9; border: 1px solid #d5e1da; box-shadow: var(--shadow); }
+    .hero-copy, .hero-card { position: relative; z-index: 1; }
+    .eyebrow { display: flex; align-items: center; gap: 9px; color: var(--teal); font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .eyebrow .rule { height: 1px; width: 26px; background: currentColor; }
+    h1 { max-width: 600px; margin: 22px 0 15px; font-size: clamp(36px, 5.3vw, 62px); line-height: 1.07; letter-spacing: -.055em; font-weight: 760; }
+    h1 span { color: var(--teal); }
+    .hero-intro { max-width: 530px; margin: 0; color: #42575f; font-size: 15px; }
+    .trip-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 27px; }
+    .meta-pill { display: flex; align-items: center; gap: 8px; min-height: 37px; padding: 7px 12px; border: 1px solid rgba(55, 86, 78, .15); border-radius: 999px; background: rgba(255, 255, 255, .62); color: #435860; font-size: 12px; }
+    .meta-pill strong { color: var(--ink); font-weight: 750; }
+    .hero-card { align-self: center; padding: 23px 23px 20px; border-radius: 22px; background: var(--card); box-shadow: 0 14px 35px rgba(30, 54, 51, .08); }
+    .card-kicker { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; color: var(--muted); font-size: 11px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .status-chip { display: inline-flex; align-items: center; gap: 7px; padding: 5px 9px; border-radius: 999px; color: #845029; background: var(--orange-light); font-size: 10px; letter-spacing: 0; white-space: nowrap; }
+    .status-chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #cc733d; }
+    .hero-card h2 { margin: 0 0 5px; font-size: 22px; letter-spacing: -.025em; }
+    .hero-card > p { margin: 0 0 16px; color: var(--muted); font-size: 13px; }
+    .signal-row { display: grid; grid-template-columns: 46px 1fr auto; gap: 12px; align-items: center; padding: 13px 0; border-top: 1px solid #edf0eb; }
+    .signal-date { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; color: var(--teal); background: var(--teal-light); font-size: 10px; font-weight: 800; line-height: 1.2; text-align: center; }
+    .signal-row strong { display: block; font-size: 13px; }
+    .signal-row small { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; }
+    .signal-tag { color: var(--orange); font-size: 10px; font-weight: 800; white-space: nowrap; }
+    .source-banner { display: flex; gap: 13px; align-items: flex-start; margin: 18px 0 42px; padding: 15px 18px; border: 1px solid #efdbc9; border-radius: 16px; background: #fff7ed; color: #614833; font-size: 12px; }
+    .source-banner svg { flex: none; width: 19px; height: 19px; color: var(--orange); }
+    .source-banner strong { color: #493526; }
+    .source-banner p { margin: 0; }
+    .section { margin-top: 48px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+    .section-head h2 { margin: 5px 0 0; font-size: clamp(24px, 3vw, 34px); letter-spacing: -.045em; }
+    .section-head p { max-width: 540px; margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+    .section-label { color: var(--teal); font-size: 10px; font-weight: 850; letter-spacing: .17em; text-transform: uppercase; }
+    .section-action { flex: none; color: var(--teal); text-decoration: none; font-size: 12px; font-weight: 750; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .event-card { min-height: 196px; padding: 21px 22px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: 0 8px 22px rgba(32, 57, 54, .035); }
+    .event-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .event-kind { color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .event-badge { padding: 5px 9px; border-radius: 999px; background: #f2eee5; color: #735c3d; font-size: 10px; font-weight: 760; }
+    .event-badge.orange { color: #8a4d2a; background: var(--orange-light); }
+    .event-card h3 { margin: 13px 0 6px; font-size: 20px; letter-spacing: -.03em; }
+    .event-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .event-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .event-meta span { padding: 5px 9px; border-radius: 8px; color: #3f565c; background: #f0f3ef; font-size: 10px; }
+    .callout { margin-top: 15px; padding: 11px 12px; border-left: 3px solid #d78951; border-radius: 0 10px 10px 0; background: #fff7f0; color: #604732; font-size: 11px; }
+    .history-grid { display: grid; gap: 17px; }
+    .history-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: 0 8px 22px rgba(32, 57, 54, .035); }
+    .history-head { display: grid; grid-template-columns: 100px 1fr auto; gap: 18px; align-items: center; padding: 22px 24px; border-bottom: 1px solid #edf0eb; }
+    .history-date { color: var(--teal); font-size: 28px; font-weight: 780; letter-spacing: -.05em; line-height: 1; }
+    .history-date span { display: block; margin-top: 6px; color: var(--muted); font-size: 10px; font-weight: 740; letter-spacing: .1em; text-transform: uppercase; }
+    .history-title h3 { margin: 0 0 3px; font-size: 19px; letter-spacing: -.025em; }
+    .history-title p { margin: 0; color: var(--muted); font-size: 12px; }
+    .history-level { padding: 6px 10px; border-radius: 999px; color: var(--teal); background: var(--teal-light); font-size: 10px; font-weight: 800; white-space: nowrap; }
+    .history-body { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; padding: 22px 24px 24px; }
+    .history-block h4 { display: flex; gap: 8px; align-items: center; margin: 0 0 11px; font-size: 12px; }
+    .history-block h4 svg { width: 16px; height: 16px; color: var(--teal); }
+    .history-block p, .history-block li { color: #52636a; font-size: 12px; }
+    .history-block p { margin: 0 0 9px; }
+    .history-block ul { margin: 0; padding-left: 17px; }
+    .history-block li + li { margin-top: 5px; }
+    .route-line { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin: 8px 0 10px; color: var(--ink); font-size: 11px; font-weight: 700; }
+    .route-line span { display: inline-flex; align-items: center; min-height: 27px; padding: 4px 8px; border-radius: 8px; background: #eef4f0; }
+    .route-line b { color: #71817d; font-size: 12px; }
+    .fact-note { margin-top: 10px; padding: 10px 11px; border-radius: 10px; background: #f4f6f3; color: #596b70; font-size: 10px; }
+    details { margin-top: 10px; }
+    summary { cursor: pointer; color: var(--teal); font-size: 11px; font-weight: 750; }
+    summary:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid rgba(18, 100, 92, .32); outline-offset: 3px; }
+    .station-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+    .station-list span { padding: 4px 7px; border: 1px solid #e4e9e3; border-radius: 7px; color: #4d6165; background: #fafbf8; font-size: 10px; }
+    .cite { display: inline-flex; gap: 5px; align-items: center; margin-top: 10px; color: var(--teal); text-decoration: none; font-size: 10px; font-weight: 750; }
+    .cite:hover { text-decoration: underline; }
+    .feed-panel { overflow: hidden; border: 1px solid var(--line); border-radius: 23px; background: var(--card); box-shadow: var(--shadow); }
+    .feed-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 20px; border-bottom: 1px solid #edf0eb; }
+    .feed-state { display: flex; align-items: center; gap: 9px; color: var(--muted); font-size: 11px; }
+    .feed-state strong { color: var(--ink); }
+    .feed-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; padding: 8px 12px; border: 1px solid #cddbd5; border-radius: 10px; color: var(--teal); background: #fff; cursor: pointer; font-size: 11px; font-weight: 750; transition: background .18s ease, border-color .18s ease; }
+    .btn:hover { border-color: #7ca99f; background: #f1f8f4; }
+    .btn:disabled { cursor: wait; opacity: .62; }
+    .btn svg { width: 15px; height: 15px; }
+    .feed-note { padding: 10px 20px; color: #6b5a42; background: #fff9ed; border-bottom: 1px solid #f3ebd8; font-size: 10px; }
+    .feed-list { display: grid; }
+    .feed-item { display: grid; grid-template-columns: 112px 1fr auto; gap: 13px; align-items: start; padding: 16px 20px; border-bottom: 1px solid #edf0eb; }
+    .feed-item:last-child { border-bottom: 0; }
+    .feed-source { color: var(--muted); font-size: 10px; font-weight: 750; }
+    .feed-item h3 { margin: 0; font-size: 13px; line-height: 1.5; }
+    .feed-item h3 a { text-decoration: none; }
+    .feed-item h3 a:hover { color: var(--teal); text-decoration: underline; }
+    .feed-item p { margin: 4px 0 0; color: var(--muted); font-size: 10px; }
+    .feed-label { padding: 4px 7px; border-radius: 7px; color: #456960; background: #eaf4ee; font-size: 9px; font-weight: 760; white-space: nowrap; }
+    .feed-label.media { color: #775c3c; background: #f4eee3; }
+    .feed-empty { padding: 28px 20px; color: var(--muted); font-size: 12px; text-align: center; }
+    .feed-loading { display: inline-flex; gap: 8px; align-items: center; }
+    .spin { width: 14px; height: 14px; border: 2px solid #cbd9d3; border-top-color: var(--teal); border-radius: 50%; animation: spin .8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .source-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; }
+    .source-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 15px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); text-decoration: none; transition: border-color .18s ease, transform .18s ease; }
+    .source-link:hover { border-color: #92b2a8; transform: translateY(-1px); }
+    .source-link strong { display: block; font-size: 12px; }
+    .source-link small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; }
+    .source-link svg { flex: none; width: 16px; height: 16px; color: var(--teal); }
+    .safety-strip { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; margin-top: 48px; }
+    .safety-card { padding: 23px; border: 1px solid var(--line); border-radius: 22px; background: var(--card); }
+    .safety-card h2 { margin: 0 0 10px; font-size: 19px; letter-spacing: -.025em; }
+    .safety-card p, .safety-card li { color: var(--muted); font-size: 12px; }
+    .safety-card ul { margin: 10px 0 0; padding-left: 18px; }
+    .safety-card li + li { margin-top: 5px; }
+    .emergency-card { color: #fff; background: var(--teal); border-color: var(--teal); }
+    .emergency-card p, .emergency-card small { color: rgba(255,255,255,.8); }
+    .emergency-number { display: flex; flex-wrap: wrap; gap: 10px; margin: 13px 0; }
+    .emergency-number a { display: inline-flex; align-items: center; justify-content: center; min-width: 72px; padding: 8px 13px; border-radius: 10px; color: var(--teal); background: #f6fffb; text-decoration: none; font-size: 18px; font-weight: 850; }
+    .footer { display: flex; justify-content: space-between; gap: 20px; margin-top: 27px; padding-top: 19px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+    .footer p { margin: 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-card { max-width: none; }
+      .history-body { grid-template-columns: 1fr; gap: 16px; }
+      .source-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 620px) {
+      .shell { width: min(100% - 24px, 560px); }
+      .topbar-inner { min-height: 62px; gap: 6px; }
+      .brand { gap: 8px; font-size: 12px; }
+      .brand-mark { width: 32px; height: 32px; }
+      .brand-text small { font-size: 8px; }
+      .nav { gap: 0; }
+      .nav a { padding: 8px 8px; font-size: 10px; }
+      .nav .nav-live { gap: 5px; }
+      main { padding-top: 16px; }
+      .hero { gap: 22px; padding: 24px 19px 20px; border-radius: 22px; }
+      h1 { margin-top: 17px; font-size: 40px; }
+      .hero-intro { font-size: 13px; }
+      .trip-meta { margin-top: 20px; }
+      .meta-pill { min-height: 33px; padding: 6px 9px; font-size: 10px; }
+      .hero-card { padding: 18px 16px 15px; border-radius: 17px; }
+      .hero-card h2 { font-size: 18px; }
+      .signal-row { grid-template-columns: 41px 1fr; gap: 10px; }
+      .signal-date { width: 40px; height: 40px; }
+      .signal-tag { grid-column: 2; margin-top: -6px; }
+      .source-banner { margin: 12px 0 33px; padding: 12px 13px; font-size: 11px; }
+      .section { margin-top: 38px; }
+      .section-head { align-items: start; }
+      .section-head h2 { font-size: 26px; }
+      .section-head p { font-size: 11px; }
+      .section-action { margin-top: 18px; font-size: 10px; }
+      .event-grid { grid-template-columns: 1fr; gap: 10px; }
+      .event-card { min-height: auto; padding: 17px; border-radius: 17px; }
+      .event-card h3 { font-size: 18px; }
+      .history-head { grid-template-columns: 64px 1fr; gap: 10px; padding: 17px 16px; }
+      .history-date { font-size: 24px; }
+      .history-title h3 { font-size: 16px; }
+      .history-title p { font-size: 10px; }
+      .history-level { grid-column: 2; justify-self: start; margin-top: -4px; }
+      .history-body { padding: 17px 16px; }
+      .history-block p, .history-block li { font-size: 11px; }
+      .route-line { font-size: 10px; }
+      .feed-toolbar { align-items: start; padding: 14px; }
+      .feed-actions { width: 100%; }
+      .btn { flex: 1; padding: 8px 9px; font-size: 10px; }
+      .feed-note { padding: 10px 14px; }
+      .feed-item { grid-template-columns: 1fr auto; gap: 6px 9px; padding: 14px; }
+      .feed-source { grid-column: 1 / 2; }
+      .feed-item h3 { grid-column: 1 / -1; grid-row: 2; font-size: 12px; }
+      .feed-item p { grid-column: 1 / -1; grid-row: 3; }
+      .feed-label { grid-column: 2; grid-row: 1; }
+      .source-grid { grid-template-columns: 1fr; gap: 8px; }
+      .source-link { padding: 12px 13px; }
+      .safety-strip { grid-template-columns: 1fr; margin-top: 38px; }
+      .safety-card { padding: 18px; border-radius: 18px; }
+      .footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top" aria-label="巴黎出行观察首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5 20 7v5.1c0 4.1-2.8 7.2-8 8.8-5.2-1.6-8-4.7-8-8.8V7l8-3.5Z" stroke="currentColor" stroke-width="1.7"/><path d="m8.4 12.1 2.2 2.2 4.9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">巴黎出行观察<small>Paris travel watch</small></span>
+      </a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#upcoming">未来行动</a>
+        <a href="#history">历史影响</a>
+        <a class="nav-live" href="#live"><span class="live-dot"></span>最新动态</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="rule"></span> Paris · Travel Briefing · 2026</div>
+        <h1 id="page-title">巴黎出行<br><span>风险观察板</span></h1>
+        <p class="hero-intro">把已发布的行动号召、交通公告和历史影响分开呈现。这里只记录可追溯的信息，不把传闻标成封控，也不把“没有消息”说成“没有风险”。</p>
+        <div class="trip-meta">
+          <span class="meta-pill"><strong>您的行程</strong> 2026.11.03 — 11.09</span>
+          <span class="meta-pill"><strong>资料基准</strong> 2026.10.26</span>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="行程期间重点">
+        <div class="card-kicker"><span>TRIP WEEK · KEY SIGNALS</span><span class="status-chip">尚无路线确认</span></div>
+        <h2>行程期间值得留意</h2>
+        <p>目前看到的是行动号召，不等于巴黎已确认路线或封站。</p>
+        <div class="signal-row">
+          <span class="signal-date">11月<br>05日</span>
+          <span><strong>全国工会行动号召</strong><small>巴黎集合时间、路线与交通影响待确认</small></span>
+          <span class="signal-tag">行程内</span>
+        </div>
+        <div class="signal-row">
+          <span class="signal-date">10月<br>31日</span>
+          <span><strong>黄背心行动号召</strong><small>在抵达巴黎前；当地路线和时间未核实</small></span>
+          <span class="signal-tag">待核实</span>
+        </div>
+      </aside>
+    </section>
+
+    <div class="source-banner" role="note">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 22 20H2L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 9v5m0 3h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <p><strong>信息边界：</strong>新闻动态区由 Google News RSS 搜索索引汇总，不是警方或交通运营商的官方实时警报接口，可能延迟、重复或遗漏。确认路线、景点开放与交通运行前，请打开下方官方公告。网页按静态数据快照的更新时间刷新，仅在页面保持打开时运行；关闭网页后不会定时检查或推送。</p>
+    </div>
+
+    <section id="upcoming" class="section" aria-labelledby="upcoming-title">
+      <div class="section-head">
+        <div>
+          <div class="section-label">Upcoming · 未来行动</div>
+          <h2 id="upcoming-title">已知号召，不替官方下结论</h2>
+          <p>截至 2026 年 10 月 26 日，公开报道提到下列日期；巴黎具体路线、集合时间和交通影响需以后续警方及运营商公告为准。</p>
+        </div>
+        <a class="section-action" href="#sources">查看官方来源 ↗</a>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-top"><span class="event-kind">Before your arrival · 抵达前</span><span class="event-badge">行动号召</span></div>
+          <h3>10 月 31 日 · 黄背心相关行动</h3>
+          <p>媒体报道组织者呼吁再次行动；目前未核实巴黎获批路线、集合时间、封控区域或景点关闭清单。</p>
+          <div class="event-meta"><span>路线：未确认</span><span>集合时间：未确认</span><span>交通影响：未确认</span></div>
+          <div class="callout">不要把此前媒体提及的候选地点当作警方批准的游行路线。</div>
+          <a class="cite" href="https://www.thelocal.fr/index.php/20261024/frances-yellow-vest-movement-calls-new-protests-for-october-31st" target="_blank" rel="noopener">来源：The Local（媒体报道）↗</a>
+        </article>
+        <article class="event-card">
+          <div class="event-top"><span class="event-kind">During your trip · 行程内</span><span class="event-badge orange">重点关注</span></div>
+          <h3>11 月 5 日 · 全国工会行动号召</h3>
+          <p>CFDT、CGT、FO、UNSA、FSU 等工会呼吁全国行动；铁路工会也报道了当日罢工号召。巴黎路线和实际运力影响尚未确认。</p>
+          <div class="event-meta"><span>全国行动：有报道</span><span>巴黎路线：未确认</span><span>地铁/铁路：等运营公告</span></div>
+          <div class="callout">“有罢工号召”不等于所有铁路、地铁停运；出发前查看当日线路和车次公告。</div>
+          <a class="cite" href="https://beta.connexionfrance.com/news/french-rail-unions-join-growing-november-5-strike/822438" target="_blank" rel="noopener">来源：The Connexion（媒体报道）↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="history" class="section" aria-labelledby="history-title">
+      <div class="section-head">
+        <div>
+          <div class="section-label">Past events · 历史影响记录</div>
+          <h2 id="history-title">两次重大游行，按日期回看</h2>
+          <p>以下都是已经发生的事件，不代表 11 月 3—9 日会重复封闭。路线、交通和景点信息分别标明来源类型。</p>
+        </div>
+        <span class="section-action">历史信息 ≠ 当前警报</span>
+      </div>
+
+      <div class="history-grid">
+        <article class="history-card">
+          <header class="history-head">
+            <div class="history-date">10·17<span>2026 · 历史</span></div>
+            <div class="history-title"><h3>共和国广场 → 克利希广场</h3><p>生活成本相关的大型游行；路线与影响来自交通公告及媒体报道。</p></div>
+            <span class="history-level">官方交通公告 + 媒体记录</span>
+          </header>
+          <div class="history-body">
+            <div class="history-block">
+              <h4><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17 9 7l4 6 3-4 4 8H4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 20h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>路线与区域</h4>
+              <div class="route-line"><span>Place de la République</span><b>→</b><span>Boulevard Magenta</span><b>→</b><span>Barbès–Rochechouart</span><b>→</b><span>Boulevard de Clichy</span><b>→</b><span>Place de Clichy</span></div>
+              <p><strong>沿线关注：</strong>共和国广场及第 3、10、11 区交界，Magenta 大道（第 10 区），Barbès 一带（第 9、10、18 区），终点克利希广场周边（第 8、9、17、18 区）。</p>
+              <p><strong>时间：</strong>当时报导的出发时间有 14:00 与 14:30 两种说法；此处不将其当作统一核实的警方时间。警方公布路线的细节由媒体转述。</p>
+              <div class="fact-note">新闻还记录了共和国广场附近冲突、燃烧物及商铺受损等情况；这些是媒体所述的周边事件，不等同于全部发生在获批游行队伍路线内。</div>
+              <a class="cite" href="https://www.sortiraparis.com/en/news/in-paris/articles/353967-mobilisation-du-17-octobre-a-paris-quel-parcours-pour-la-manifestation-prevue-ce-samedi" target="_blank" rel="noopener">路线来源：Sortiraparis（媒体转述警方安排）↗</a>
+              <a class="cite" href="http://epaperres.chinanews.com/epms/article/html/2026/10/21/1562409277199618048.html" target="_blank" rel="noopener">现场影响来源：中国新闻网（媒体报道）↗</a>
+            </div>
+            <div class="history-block">
+              <h4><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8" cy="6" r="1" fill="currentColor"/><circle cx="15" cy="12" r="1" fill="currentColor"/></svg>交通与景点影响</h4>
+              <p><strong>RATP：</strong>25 个地铁/RER 车站分批关闭——16 个从 08:00 起、9 个从 12:00 起；受影响车站列车不停靠、站内换乘不可用，恢复时间由警方批准。地铁 6 号线列车从 08:00 起以 Kléber 为终点；公交可能改道或缩短线路。</p>
+              <details>
+                <summary>展开查看 25 个关闭车站与时段</summary>
+                <p><strong>08:00 起（16）：</strong></p>
+                <div class="station-list"><span>Charles de Gaulle–Étoile</span><span>Argentine</span><span>George V</span><span>Tuileries</span><span>Franklin D. Roosevelt</span><span>Champs-Élysées–Clemenceau</span><span>Concorde</span><span>Opéra</span><span>Chaussée d’Antin–La Fayette</span><span>Pyramides</span><span>Madeleine</span><span>Miromesnil</span><span>Assemblée Nationale</span><span>Solférino</span><span>Rue du Bac</span><span>Varenne</span></div>
+                <p style="margin-top:10px"><strong>12:00 起（9）：</strong></p>
+                <div class="station-list"><span>Bastille</span><span>Anvers</span><span>Blanche</span><span>Barbès–Rochechouart</span><span>Pigalle</span><span>Bourse</span><span>Chemin Vert</span><span>Saint-Sébastien–Froissart</span><span>Filles du Calvaire</span></div>
+              </details>
+              <p style="margin-top:10px"><strong>景点：</strong>新华社报道，卢浮宫限制当日入场人数；橘园美术馆仅接待已预约访客。此为历史情况，不应套用到其他日期。</p>
+              <a class="cite" href="https://www.bonjour-ratp.fr/en/actualites/articles/manifestation-17-octobre-2026" target="_blank" rel="noopener">交通来源：Bonjour RATP（运营商公告）↗</a>
+              <a class="cite" href="https://www.thestar.com.my/news/world/2026/10/18/around-550000-people-take-part-in-protests-across-france-about-400-arrested-minister" target="_blank" rel="noopener">景点来源：新华社报道转载（媒体报道）↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="history-card">
+          <header class="history-head">
+            <div class="history-date">10·24<span>2026 · 历史</span></div>
+            <div class="history-title"><h3>意大利门 → 文森门</h3><p>原先公布的路线发生变更；务必区分早期计划与当天警方最新路线。</p></div>
+            <span class="history-level">使馆转述警方 + RATP公告</span>
+          </header>
+          <div class="history-body">
+            <div class="history-block">
+              <h4><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17 9 7l4 6 3-4 4 8H4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 20h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>路线与区域</h4>
+              <div class="route-line"><span>Porte d’Italie</span><b>→</b><span>Boulevards des Maréchaux</span><b>→</b><span>Porte de Vincennes</span></div>
+              <p><strong>区域：</strong>路线从第 13 区意大利门出发，沿巴黎东南侧环线一带前往第 12、20 区交界的文森门。驻法使馆于 10 月 24 日 18:45 发布提醒，称根据警方最新消息路线已变更为意大利门至文森门。</p>
+              <p><strong>时间：</strong>媒体报道当日游行约 14:00 开始；该时间由媒体报道，不能替代警方原始命令。</p>
+              <div class="fact-note">媒体报道，游行结束后文森门附近发生冲突；该记录与游行路线信息分开标注，也不表示该地目前有风险警报。</div>
+              <a class="cite" href="https://fr.china-embassy.gov.cn/zgzfg/zgsg/lsqwc/202610/t20261024_12046337.htm" target="_blank" rel="noopener">路线核验：驻法国使馆领事提醒（转述警方最新消息）↗</a>
+              <a class="cite" href="https://www.thelocal.fr/index.php/20261024/france-to-deploy-70000-police-for-fresh-weekend-protests" target="_blank" rel="noopener">现场影响：The Local / AFP（媒体报道）↗</a>
+            </div>
+            <div class="history-block">
+              <h4><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8" cy="6" r="1" fill="currentColor"/><circle cx="15" cy="12" r="1" fill="currentColor"/></svg>交通与景点影响</h4>
+              <p><strong>RATP：</strong>24 个车站从 09:00 起关闭；地铁 2 号线 Barbès–Rochechouart—Nation、6 号线 Kléber—Charles de Gaulle–Étoile、12 号线 Madeleine—Notre-Dame-des-Champs 区段停运。受影响站点列车不停靠，恢复时间以警方放行为准。</p>
+              <details>
+                <summary>展开查看 24 个关闭车站</summary>
+                <div class="station-list"><span>Argentine</span><span>Assemblée Nationale</span><span>Bel Air</span><span>Champs-Élysées–Clemenceau</span><span>Charles de Gaulle–Étoile</span><span>Cluny–La Sorbonne</span><span>Concorde</span><span>Daumesnil</span><span>Dugommier</span><span>Franklin D. Roosevelt</span><span>George V</span><span>Mabillon</span><span>Maubert–Mutualité</span><span>Miromesnil</span><span>Odéon</span><span>Picpus</span><span>Rennes</span><span>Rue du Bac</span><span>Saint-Germain-des-Prés</span><span>Saint-Sulpice</span><span>Sèvres–Babylone</span><span>Solférino</span><span>Tuileries</span><span>Varenne</span></div>
+              </details>
+              <p style="margin-top:10px"><strong>景点：</strong>AFP 媒体报道卢浮宫与奥赛博物馆当日闭馆。媒体另有电车、公交受影响的报道；本记录不把媒体信息当作运营商确认。</p>
+              <a class="cite" href="https://www.bonjour-ratp.fr/en/actualites/articles/bulletin-travaux-24-octobre" target="_blank" rel="noopener">交通来源：Bonjour RATP（运营商周报）↗</a>
+              <a class="cite" href="https://www.thelocal.fr/index.php/20261024/france-to-deploy-70000-police-for-fresh-weekend-protests" target="_blank" rel="noopener">景点来源：The Local / AFP（媒体报道）↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="live" class="section" aria-labelledby="live-title">
+      <div class="section-head">
+        <div>
+          <div class="section-label">News index · 最新动态</div>
+          <h2 id="live-title">打开原文，再判断是否影响行程</h2>
+          <p>页面读取 GitHub Actions 定时生成的新闻快照；来源域名匹配不等于内容已由本站独立核实。</p>
+        </div>
+      </div>
+      <div class="feed-panel">
+        <div class="feed-toolbar">
+          <div class="feed-state" id="feedState" aria-live="polite"><span class="feed-loading"><span class="spin" aria-hidden="true"></span>正在连接信息源…</span></div>
+          <div class="feed-actions">
+            <button id="refreshButton" class="btn" type="button">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.8-3L3 11m0-5v5h5m-4 2a8 8 0 0 0 14.8 3L21 13m0 5v-5h-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              立即刷新
+            </button>
+            <button id="notifyButton" class="btn" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              开启浏览器通知
+            </button>
+          </div>
+        </div>
+        <div class="feed-note">自动读取：GitHub Actions 计划每 30 分钟生成新快照；页面打开时按快照设置读取，浏览器可限制后台标签页计时。关闭页面后不工作。通知需浏览器授权，仅对页面运行期间首次出现的检索结果作提示，不是官方紧急警报。</div>
+        <div id="feedList" class="feed-list" aria-live="polite"><div class="feed-empty">正在加载检索结果…</div></div>
+      </div>
+    </section>
+
+    <section id="sources" class="section" aria-labelledby="sources-title">
+      <div class="section-head">
+        <div>
+          <div class="section-label">Go to the source · 官方直达</div>
+          <h2 id="sources-title">出门前先查这些页面</h2>
+          <p>官方公告优先。路线、车站关闭和景点营业状态都可能临时变化。</p>
+        </div>
+      </div>
+      <div class="source-grid">
+        <a class="source-link" href="https://www.prefecturedepolice.interieur.gouv.fr/" target="_blank" rel="noopener"><span><strong>巴黎警察总局</strong><small>命令、集会限制、公共安全通告</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.ratp.fr/infos-trafic" target="_blank" rel="noopener"><span><strong>RATP 实时交通</strong><small>巴黎地铁、RER、公交与电车</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.iledefrance-mobilites.fr/le-reseau/infos-trafic" target="_blank" rel="noopener"><span><strong>Île-de-France Mobilités</strong><small>大巴黎公共交通服务信息</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.transilien.com/en/page-deplacements/info-trafic" target="_blank" rel="noopener"><span><strong>Transilien / SNCF</strong><small>巴黎大区铁路出行公告</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://fr.china-embassy.gov.cn/chn/lsfw/lsbhyhz/" target="_blank" rel="noopener"><span><strong>驻法国使馆 · 领事提醒</strong><small>中国公民安全与领事保护信息</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="source-link" href="https://www.bonjour-ratp.fr/en/actualites/" target="_blank" rel="noopener"><span><strong>Bonjour RATP 公告</strong><small>交通运营说明与线路服务更新</small></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </section>
+
+    <section class="safety-strip" aria-label="出行与紧急联系">
+      <article class="safety-card">
+        <h2>现场风险出现时</h2>
+        <p>避免靠近人群、路障和警戒线；如果周边气氛变化，尽早平静离开，听从警方指挥。不要把历史路线当成当天路线，也不要为了拍摄停留在现场。</p>
+        <ul>
+          <li>出发前重新查目的地、换乘站和返程路线。</li>
+          <li>看到临时封路或站点关闭，优先绕开，不要穿越聚集人群。</li>
+          <li>景点营业信息以场馆当天公告为准。</li>
+        </ul>
+      </article>
+      <article class="safety-card emergency-card">
+        <h2>紧急联络</h2>
+        <p>法国报警电话与驻法使馆领事保护联系方式：</p>
+        <div class="emergency-number"><a href="tel:17">17 报警</a><a href="tel:112">112 紧急</a></div>
+        <small>中国驻法国使馆领事保护：+33 1 53 75 88 40 · +33 6 40 95 36 07<br>号码来源：驻法使馆 2026-10-24 领事提醒。紧急情况优先联系法国紧急服务。</small>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>巴黎出行观察 · 仅供旅行信息参考，不构成安全保证。请以警方、运营商及场馆当日公告为准。</p>
+      <p>GitHub Actions 计划每 30 分钟更新快照 · 页面打开时读取 · 不提供关闭网页后的后台推送</p>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+      const DATA_URL = "data.json";
+      const LOCAL_CACHE_KEY = "paris-travel-watch-alerts-v1";
+      const SEEN_KEY = "paris-travel-watch-seen-v1";
+      const NOTIFY_KEY = "paris-travel-watch-notify-v1";
+      let refreshMs = 30 * 60 * 1000;
+      const list = document.getElementById("feedList");
+      const state = document.getElementById("feedState");
+      const refreshButton = document.getElementById("refreshButton");
+      const notifyButton = document.getElementById("notifyButton");
+      let lastLoadedAt = 0;
+      let firstFetchCompleted = false;
+
+      function storageGet(key) {
+        try { return window.localStorage.getItem(key); } catch (_) { return null; }
+      }
+
+      function storageSet(key, value) {
+        try { window.localStorage.setItem(key, value); return true; } catch (_) { return false; }
+      }
+
+      function safeDate(value) {
+        if (!value) return "時間未提供";
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return "時間未提供";
+        return new Intl.DateTimeFormat("zh-CN", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Paris" }).format(date) + "（巴黎时间）";
+      }
+
+      function element(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function render(payload, offline = false) {
+        list.replaceChildren();
+        const feeds = Array.isArray(payload && payload.feeds) ? payload.feeds : [];
+        const items = feeds.flatMap(feed => (feed.items || []).map(item => ({ ...item, feedLabel: feed.label, feedOk: feed.ok, feedError: feed.error, lastSuccessAt: feed.lastSuccessAt })));
+        items.sort((a, b) => (Date.parse(b.publishedAt || "") || 0) - (Date.parse(a.publishedAt || "") || 0));
+
+        if (!items.length) {
+          const empty = element("div", "feed-empty", offline ? "当前无法连接检索源，且设备上没有可显示的旧结果。请直接打开上方警方和交通运营商公告。" : "检索源暂时没有返回新闻条目；这不代表没有活动或交通影响。请直接打开官方公告。");
+          list.append(empty);
+        } else {
+          items.slice(0, 24).forEach(item => {
+            const row = element("article", "feed-item");
+            const source = element("div", "feed-source", item.source || item.feedLabel || "来源未标注");
+            const body = element("div");
+            const heading = element("h3");
+            const link = element("a", "", item.title || "未命名动态");
+            link.href = /^https?:\/\//i.test(item.link || "") ? item.link : "#sources";
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            heading.append(link);
+            const pubDate = element("p", "", "发布：" + safeDate(item.publishedAt));
+            body.append(heading, pubDate);
+            const badge = element("span", "feed-label" + (item.publisherDomainMatchesOfficial ? "" : " media"), item.publisherDomainMatchesOfficial ? "官方域名匹配" : "新闻/媒体索引");
+            row.append(source, body, badge);
+            list.append(row);
+          });
+        }
+
+        const failures = feeds.filter(feed => !feed.ok);
+        const successful = feeds.filter(feed => feed.ok).length;
+        const time = payload.generatedAt ? safeDate(payload.generatedAt) : "未知";
+        let statusText = offline ? "当前离线 · 显示设备缓存" : `检索完成 ${successful}/${feeds.length} 个来源 · ${time}`;
+        if (failures.length) statusText += ` · ${failures.length} 个来源刷新失败`;
+        state.replaceChildren(element("span", "live-dot"), element("span", "", statusText));
+
+        if (failures.length) {
+          const errorLine = element("div", "feed-note", failures.map(feed => `${feed.label}：${feed.error || "刷新失败"}${feed.lastSuccessAt ? " 最近成功 " + safeDate(feed.lastSuccessAt) : ""}`).join("；"));
+          list.prepend(errorLine);
+        }
+      }
+
+      function getSeen() {
+        try { return new Set(JSON.parse(storageGet(SEEN_KEY) || "[]")); } catch (_) { return new Set(); }
+      }
+
+      function saveSeen(seen) {
+        storageSet(SEEN_KEY, JSON.stringify(Array.from(seen).slice(-100)));
+      }
+
+      function maybeNotify(items) {
+        if (!firstFetchCompleted || storageGet(NOTIFY_KEY) !== "1" || !("Notification" in window) || Notification.permission !== "granted") return;
+        const seen = getSeen();
+        const fresh = items.filter(item => item.id && !seen.has(item.id));
+        fresh.slice(0, 2).forEach(item => {
+          try { new Notification("巴黎出行观察 · 新检索结果", { body: item.title || "打开看板查看最新动态", tag: String(item.id).slice(0, 100) }); } catch (_) {}
+        });
+        items.forEach(item => { if (item.id) seen.add(item.id); });
+        saveSeen(seen);
+      }
+
+      async function refresh(force = false) {
+        refreshButton.disabled = true;
+        refreshButton.setAttribute("aria-busy", "true");
+        const loading = element("span", "feed-loading");
+        loading.append(element("span", "spin"), document.createTextNode("正在刷新…"));
+        state.replaceChildren(loading);
+        try {
+          const cacheBust = force ? (DATA_URL.includes("?") ? "&" : "?") + "t=" + Date.now() : "";
+          const response = await fetch(DATA_URL + cacheBust, { cache: "no-store", headers: { "Accept": "application/json" } });
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          const payload = await response.json();
+          if (!Array.isArray(payload.feeds)) throw new Error("数据格式异常");
+          storageSet(LOCAL_CACHE_KEY, JSON.stringify(payload));
+          refreshMs = Math.max(60 * 1000, Number(payload.refreshAfterSeconds || 1800) * 1000);
+          const items = payload.feeds.flatMap(feed => feed.items || []);
+          maybeNotify(items);
+          const seen = getSeen();
+          items.forEach(item => { if (item.id) seen.add(item.id); });
+          saveSeen(seen);
+          firstFetchCompleted = true;
+          render(payload, false);
+          lastLoadedAt = Date.now();
+        } catch (error) {
+          let cached = null;
+          try { cached = JSON.parse(storageGet(LOCAL_CACHE_KEY) || "null"); } catch (_) {}
+          if (cached) render(cached, true);
+          else {
+            list.replaceChildren(element("div", "feed-empty", "暂时连不上新闻检索。已保留上方重要来源，请直接查看警方、RATP 和铁路官方公告；无法连接不代表没有事件。"));
+            state.replaceChildren(element("span", "", "新闻检索暂不可用 · 请查官方来源"));
+          }
+        } finally {
+          refreshButton.disabled = false;
+          refreshButton.removeAttribute("aria-busy");
+        }
+      }
+
+      refreshButton.addEventListener("click", () => refresh(true));
+      notifyButton.addEventListener("click", async () => {
+        if (!("Notification" in window)) {
+          state.replaceChildren(element("span", "", "此浏览器不支持网页通知；请直接打开看板查看。"));
+          return;
+        }
+        let permission = Notification.permission;
+        if (permission === "default") {
+          try { permission = await Notification.requestPermission(); } catch (_) { permission = "denied"; }
+        }
+        if (permission === "granted") {
+          storageSet(NOTIFY_KEY, "1");
+          notifyButton.setAttribute("aria-pressed", "true");
+          notifyButton.textContent = "浏览器通知已开启";
+          state.replaceChildren(element("span", "live-dot"), element("span", "", "已授权浏览器通知 · 页面需保持打开"));
+        } else {
+          storageSet(NOTIFY_KEY, "0");
+          notifyButton.setAttribute("aria-pressed", "false");
+          state.replaceChildren(element("span", "", permission === "denied" ? "通知权限被浏览器拒绝；可在网站权限设置中修改。" : "未开启通知。"));
+        }
+      });
+
+      if (storageGet(NOTIFY_KEY) === "1" && "Notification" in window && Notification.permission === "granted") {
+        notifyButton.setAttribute("aria-pressed", "true");
+        notifyButton.textContent = "浏览器通知已开启";
+      }
+
+      try { if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {}); } catch (_) {}
+
+      try {
+        const cached = JSON.parse(storageGet(LOCAL_CACHE_KEY) || "null");
+        if (cached) render(cached, true);
+      } catch (_) {}
+      refresh(false);
+      window.setInterval(() => {
+        if (document.visibilityState === "visible" && Date.now() - lastLoadedAt >= refreshMs) refresh(false);
+      }, 60 * 1000);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible" && Date.now() - lastLoadedAt >= refreshMs) refresh(false);
+      });
+    })();
+  </script>
+</body>
+</html>
