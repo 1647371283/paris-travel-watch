@@ -84,8 +84,15 @@
     .event-badge.orange { color: #8a4d2a; background: var(--orange-light); }
     .event-card h3 { margin: 13px 0 6px; font-size: 20px; letter-spacing: -.03em; }
     .event-card p { margin: 0; color: var(--muted); font-size: 13px; }
-    .event-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-    .event-meta span { padding: 5px 9px; border-radius: 8px; color: #3f565c; background: #f0f3ef; font-size: 10px; }
+    .event-fields { display: grid; gap: 8px; margin-top: 16px; }
+    .event-field { display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 9px; padding-top: 8px; border-top: 1px solid #edf0eb; }
+    .event-field strong { color: #3f565c; font-size: 11px; }
+    .event-field span { min-width: 0; color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+    .event-field em { display: block; margin-top: 2px; color: #8a5a35; font-size: 10px; font-style: normal; }
+    .event-sources { display: grid; gap: 6px; margin-top: 14px; padding-top: 10px; border-top: 1px solid #edf0eb; }
+    .event-source { color: var(--teal); font-size: 11px; font-weight: 700; overflow-wrap: anywhere; }
+    .event-source small { display: block; margin-top: 2px; color: var(--muted); font-size: 10px; font-weight: 500; }
+    .event-empty { grid-column: 1 / -1; padding: 20px; border: 1px dashed #cbd8d0; color: var(--muted); font-size: 13px; }
     .callout { margin-top: 15px; padding: 11px 12px; border-left: 3px solid #d78951; border-radius: 0 10px 10px 0; background: #fff7f0; color: #604732; font-size: 11px; }
     .history-grid { display: grid; gap: 17px; }
     .history-card { overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--card); box-shadow: 0 8px 22px rgba(32, 57, 54, .035); }
@@ -244,22 +251,15 @@
         <p class="hero-intro">把已发布的行动号召、交通公告和历史影响分开呈现。这里只记录可追溯的信息，不把传闻标成封控，也不把“没有消息”说成“没有风险”。</p>
         <div class="trip-meta">
           <span class="meta-pill"><strong>您的行程</strong> 2026.11.03 — 11.09</span>
-          <span class="meta-pill"><strong>资料基准</strong> 2026.10.26</span>
+          <span class="meta-pill"><strong>资料基准</strong> <span id="dataBasis">等待最新快照</span></span>
         </div>
       </div>
       <aside class="hero-card" aria-label="行程期间重点">
         <div class="card-kicker"><span>TRIP WEEK · KEY SIGNALS</span><span class="status-chip">尚无路线确认</span></div>
         <h2>行程期间值得留意</h2>
         <p>目前看到的是行动号召，不等于巴黎已确认路线或封站。</p>
-        <div class="signal-row">
-          <span class="signal-date">11月<br>05日</span>
-          <span><strong>全国工会行动号召</strong><small>巴黎集合时间、路线与交通影响待确认</small></span>
-          <span class="signal-tag">行程内</span>
-        </div>
-        <div class="signal-row">
-          <span class="signal-date">10月<br>31日</span>
-          <span><strong>黄背心行动号召</strong><small>在抵达巴黎前；当地路线和时间未核实</small></span>
-          <span class="signal-tag">待核实</span>
+        <div id="tripSignals">
+          <p class="feed-empty">正在读取未来行动线索…</p>
         </div>
       </aside>
     </section>
@@ -273,28 +273,13 @@
       <div class="section-head">
         <div>
           <div class="section-label">Upcoming · 未来行动</div>
-          <h2 id="upcoming-title">已知号召，不替官方下结论</h2>
-          <p>截至 2026 年 10 月 26 日，公开报道提到下列日期；巴黎具体路线、集合时间和交通影响需以后续警方及运营商公告为准。</p>
+          <h2 id="upcoming-title">按最新检索线索动态整理</h2>
+          <p>本区只展示标题中识别出的未来日期。日期、路线、集合时间、区域、交通和场馆信息均须以原文及当天官方公告核实；检索不到不代表没有行动。</p>
         </div>
         <a class="section-action" href="#sources">查看官方来源 ↗</a>
       </div>
-      <div class="event-grid">
-        <article class="event-card">
-          <div class="event-top"><span class="event-kind">Before your arrival · 抵达前</span><span class="event-badge">行动号召</span></div>
-          <h3>10 月 31 日 · 黄背心相关行动</h3>
-          <p>媒体报道组织者呼吁再次行动；目前未核实巴黎获批路线、集合时间、封控区域或景点关闭清单。</p>
-          <div class="event-meta"><span>路线：未确认</span><span>集合时间：未确认</span><span>交通影响：未确认</span></div>
-          <div class="callout">不要把此前媒体提及的候选地点当作警方批准的游行路线。</div>
-          <a class="cite" href="https://www.thelocal.fr/index.php/20261024/frances-yellow-vest-movement-calls-new-protests-for-october-31st" target="_blank" rel="noopener">来源：The Local（媒体报道）↗</a>
-        </article>
-        <article class="event-card">
-          <div class="event-top"><span class="event-kind">During your trip · 行程内</span><span class="event-badge orange">重点关注</span></div>
-          <h3>11 月 5 日 · 全国工会行动号召</h3>
-          <p>CFDT、CGT、FO、UNSA、FSU 等工会呼吁全国行动；铁路工会也报道了当日罢工号召。巴黎路线和实际运力影响尚未确认。</p>
-          <div class="event-meta"><span>全国行动：有报道</span><span>巴黎路线：未确认</span><span>地铁/铁路：等运营公告</span></div>
-          <div class="callout">“有罢工号召”不等于所有铁路、地铁停运；出发前查看当日线路和车次公告。</div>
-          <a class="cite" href="https://beta.connexionfrance.com/news/french-rail-unions-join-growing-november-5-strike/822438" target="_blank" rel="noopener">来源：The Connexion（媒体报道）↗</a>
-        </article>
+      <div id="eventGrid" class="event-grid" aria-live="polite">
+        <div class="event-empty">正在读取未来行动检索线索…</div>
       </div>
     </section>
 
@@ -450,8 +435,13 @@
       const LOCAL_CACHE_KEY = "paris-travel-watch-alerts-v1";
       const SEEN_KEY = "paris-travel-watch-seen-v1";
       const NOTIFY_KEY = "paris-travel-watch-notify-v1";
+      const TRIP_START = "2026-11-03";
+      const TRIP_END = "2026-11-09";
       let refreshMs = 30 * 60 * 1000;
       const list = document.getElementById("feedList");
+      const eventGrid = document.getElementById("eventGrid");
+      const tripSignals = document.getElementById("tripSignals");
+      const dataBasis = document.getElementById("dataBasis");
       const state = document.getElementById("feedState");
       const refreshButton = document.getElementById("refreshButton");
       const notifyButton = document.getElementById("notifyButton");
@@ -480,7 +470,98 @@
         return node;
       }
 
+      function formatEventDate(value) {
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(value || "")) return "日期待核实";
+        const date = new Date(value + "T12:00:00Z");
+        if (Number.isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== value) return "日期待核实";
+        return new Intl.DateTimeFormat("zh-CN", { dateStyle: "long", timeZone: "Europe/Paris" }).format(date);
+      }
+
+      function parisDate(value) {
+        const date = value ? new Date(value) : new Date();
+        if (Number.isNaN(date.getTime())) return "";
+        const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Paris", year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(date);
+        return `${parts.find(part => part.type === "year").value}-${parts.find(part => part.type === "month").value}-${parts.find(part => part.type === "day").value}`;
+      }
+
+      function renderEvents(events, generatedAt, eventWindowDays = 45, offline = false) {
+        eventGrid.replaceChildren();
+        tripSignals.replaceChildren();
+        const todayInParis = parisDate();
+        const windowEnd = new Date(todayInParis + "T12:00:00Z");
+        windowEnd.setUTCDate(windowEnd.getUTCDate() + Math.max(1, Number(eventWindowDays) || 45));
+        const lastVisibleDate = windowEnd.toISOString().slice(0, 10);
+        const futureEvents = (Array.isArray(events) ? events : []).filter(event => /^\d{4}-\d{2}-\d{2}$/.test(event.date || "") && formatEventDate(event.date) !== "日期待核实" && event.date >= todayInParis && event.date <= lastVisibleDate);
+        const tripEvents = futureEvents.filter(event => event.date >= TRIP_START && event.date <= TRIP_END);
+        if (!futureEvents.length) {
+          eventGrid.append(element("div", "event-empty", "当前快照没有检索到可列出的未来行动日期。请继续查看下方最新动态，并在出门前核对警方、交通运营商和场馆公告；没有检索到不代表没有活动。"));
+          tripSignals.append(element("p", "feed-empty", "行程期间暂未检索到可列出的日期线索；请继续核对官方公告。"));
+          return;
+        }
+        futureEvents.sort((a, b) => a.date.localeCompare(b.date));
+        if (!tripEvents.length) tripSignals.append(element("p", "feed-empty", "行程日期内暂未检索到行动日期线索；这不代表没有活动或交通影响。"));
+        tripEvents.slice(0, 3).forEach(event => {
+          const dateParts = event.date.split("-");
+          const row = element("div", "signal-row");
+          const signalDate = element("span", "signal-date");
+          signalDate.append(document.createTextNode(`${Number(dateParts[1])}月`), document.createElement("br"), document.createTextNode(`${dateParts[2]}日`));
+          row.append(signalDate);
+          const summary = element("span");
+          const signalTitle = element("strong", "", event.label || "行动日期线索");
+          const signalStatus = element("small", "", event.status || "待核实");
+          summary.append(signalTitle, signalStatus);
+          row.append(summary, element("span", "signal-tag", "待核实"));
+          tripSignals.append(row);
+        });
+        futureEvents.forEach(event => {
+          const card = element("article", "event-card");
+          const top = element("div", "event-top");
+          top.append(element("span", "event-kind", event.category || "行动线索"), element("span", "event-badge orange", event.status || "待核实"));
+          const heading = element("h3", "", `${formatEventDate(event.date)} · ${event.label || "行动日期线索"}`);
+          const summary = element("p", "", "日期由新闻检索标题自动识别，不代表行动已获批准或影响已经确认。以下字段是标题级线索，打开原文及官方公告进一步核对。" + (offline ? " 当前显示设备缓存。" : ""));
+          const fields = element("div", "event-fields");
+          const fieldDefinitions = [["路线", event.route], ["集合时间", event.meetingTime], ["涉及区域", event.districts], ["交通影响", event.transport], ["景点/场馆", event.venues]];
+          fieldDefinitions.forEach(([label, field]) => {
+            const row = element("div", "event-field");
+            row.append(element("strong", "", label));
+            const detail = element("div");
+            const evidence = field && Array.isArray(field.evidence) ? field.evidence : [];
+            if (evidence.length) {
+              const evidenceText = evidence.map(item => [item.title, item.description].filter(Boolean).join("：")).filter(Boolean).join("；");
+              detail.append(element("span", "", evidenceText || field.value || "有标题/摘要关键词线索"));
+            } else {
+              detail.append(element("span", "", field && field.value ? field.value : "没有检索到细节；待核实"));
+            }
+            detail.append(element("em", "", field && field.status ? field.status : "待核实"));
+            row.append(detail);
+            fields.append(row);
+          });
+          const sources = element("div", "event-sources");
+          (Array.isArray(event.sources) ? event.sources : []).slice(0, 6).forEach(source => {
+            const sourceWrap = element("div");
+            const url = /^https?:\/\//i.test(source.url || "") ? source.url : "";
+            if (url) {
+              const link = element("a", "event-source", source.title || source.source || "打开来源");
+              link.href = url;
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+              sourceWrap.append(link);
+            } else {
+              sourceWrap.append(element("span", "event-source", source.title || source.source || "来源链接不可用"));
+            }
+            const freshness = source.currentFeedSuccess ? "本轮检索成功" : source.lastSuccessAt ? "沿用上次成功结果 · " + safeDate(source.lastSuccessAt) : "来源刷新状态未知";
+            sourceWrap.append(element("small", "", `${source.source || "来源未标注"} · ${source.officialDomainMatch ? "官方域名匹配（内容未核验）" : "新闻索引/媒体来源"} · ${freshness}`));
+            sources.append(sourceWrap);
+          });
+          if (!sources.childNodes.length) sources.append(element("small", "", "当前事件没有可用来源链接。"));
+          card.append(top, heading, summary, fields, sources);
+          eventGrid.append(card);
+        });
+      }
+
       function render(payload, offline = false) {
+        renderEvents(payload && payload.events, payload && payload.generatedAt, payload && payload.eventWindowDays, offline);
+        dataBasis.textContent = payload && payload.generatedAt ? safeDate(payload.generatedAt) : "未知";
         list.replaceChildren();
         const feeds = Array.isArray(payload && payload.feeds) ? payload.feeds : [];
         const items = feeds.flatMap(feed => (feed.items || []).map(item => ({ ...item, feedLabel: feed.label, feedOk: feed.ok, feedError: feed.error, lastSuccessAt: feed.lastSuccessAt })));
