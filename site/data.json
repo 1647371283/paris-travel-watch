@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T00:08:53Z",
+  "generatedAt": "2026-11-04T06:28:23Z",
   "trip": {
     "startDate": "2026-11-03",
     "endDate": "2026-11-09",
@@ -9,7 +9,7 @@
     "startDate": "2026-11-03",
     "endDate": "2026-11-09",
     "focusDate": "2026-11-05",
-    "updatedAt": "2026-11-04T00:08:53Z",
+    "updatedAt": "2026-11-04T06:28:23Z",
     "priority": "集体游行/罢工优先；每天同时检查交通和景点/场馆影响",
     "days": [
       {
@@ -37,8 +37,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -46,8 +46,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -55,8 +55,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -64,8 +64,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -75,8 +75,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -84,8 +84,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -95,8 +95,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -128,8 +128,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -137,8 +137,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -146,8 +146,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -155,8 +155,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -166,8 +166,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -175,8 +175,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -186,8 +186,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -214,7 +214,7 @@
                   "publishedAt": "2026-11-03T07:49:00Z",
                   "officialDomainMatch": false,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 },
                 {
                   "title": "Manifestation du 5 novembre à Paris, quel parcours ? - Sortir à Paris",
@@ -223,25 +223,7 @@
                   "publishedAt": "2026-11-03T06:06:42Z",
                   "officialDomainMatch": false,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
-                },
-                {
-                  "title": "Manifestation et blocage des lycéens ce 2, 3 et 5 novembre - Sortir à Paris",
-                  "source": "Sortir à Paris",
-                  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVGxYU0Izb2FnMVVQSDZYaVZzZkFzWXRDRHFrd1R6STh0eXR2Q3RudEpUQ1FIYnpvQ0NnT1VDNnVvZC1ITEFfUnZ4RFQ4LUhrR3dIVl91cmF2dThSc0JPOGU2aXpIaThaMnl1WThuWm9EN0EzZ25URXBYcUFjWC1QLUJUc2MzX1JBMVhWZE1SLWR1NncyVlZyc2EtdWhHSWtybTV4WUtEOW1QWHF6MnNrYl9BcnVqLTJyRzlkelJn?oc=5",
-                  "publishedAt": "2026-11-02T05:38:58Z",
-                  "officialDomainMatch": false,
-                  "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
-                },
-                {
-                  "title": "[86] Mobilisation interprofessionnelle du 5 novembre 2026 - SE UNSA",
-                  "source": "SE UNSA",
-                  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONDJHcTI3NUhZZVNuZmI3M09YWDcxLW00aHAyVnhJSnpTR2Q4dnZYRXpYa2pWTHhLbW1qRUNBcU5Eb2MyR3NPX2IwaXRseTQ5R3RMbWFNc19qWGJIcU9vZm55bFRzeDlzS19KVk9nc1YyTXAwdUdGdkFWbFYtc0kzZUpKeFZKdVF5cnFhZ25n?oc=5",
-                  "publishedAt": "2026-10-16T07:00:00Z",
-                  "officialDomainMatch": false,
-                  "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 }
               ]
             },
@@ -255,10 +237,19 @@
                   "title": "Info Grève : mouvement social national interprofessionnel du 05 novembre 2026 - Transilien",
                   "source": "Transilien",
                   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVRpakJlaVFNRFdYMWVmdXVDeFlldE9fSDZHVXJSMWFSQ3MyUUFKZlJCeEFiQmhKZ3JHMVljTkxuTk1vMm5mWDdURDFjMzllMWI4RVlNQVdWRlc4QUlBaTBKYmJyc1VOeW1NVWpnal93ZDdKZ3dfUHg2VEVLSEY2MlQ1TDMwNFNsLUFIaEdsbmY1V2FPamNN?oc=5",
-                  "publishedAt": "2026-11-04T00:04:49Z",
+                  "publishedAt": "2026-11-04T06:09:39Z",
                   "officialDomainMatch": true,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:54Z"
+                  "lastSuccessAt": "2026-11-04T06:28:24Z"
+                },
+                {
+                  "title": "Grève du 5 novembre 2026 : quand le fournisseur et le transporteur s'arrêtent, que décident l'entreprise cliente et ses propres clients - Kohen Avocats",
+                  "source": "Kohen Avocats",
+                  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUEdyczZlcTFCVUVpQ2VTWjZfWVpFLVc3dUVQdnBVeEZlNlNYb2RzYmNZMXJQZ2JLNDRfNlljZmtzbXdrcHpRQmFXX2dSRDZ6Nmp6M0tsb2NOdUFoRzFRTTQ4VDBfMVJINFhLdWpPVWNrSmZCVEZ4UjUxaW1XeWtObXU5X3lnbHlyVEhRRm14YlpxSEZoLUZIclRibXlocDlMejFxb1o3MTdnWlA3NWljbk5R?oc=5",
+                  "publishedAt": "2026-11-03T20:49:03Z",
+                  "officialDomainMatch": false,
+                  "currentFeedSuccess": true,
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 },
                 {
                   "title": "Grève SNCF du 5 novembre 2026 maintenue : TGV, RER, les prévisions - Sortir à Paris",
@@ -267,7 +258,7 @@
                   "publishedAt": "2026-11-03T17:08:00Z",
                   "officialDomainMatch": false,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 },
                 {
                   "title": "Grève et manifestation du 5 novembre à Paris : transports, écoles, parcours, les infos - Sortir à Paris",
@@ -276,7 +267,7 @@
                   "publishedAt": "2026-11-03T06:32:00Z",
                   "officialDomainMatch": false,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 },
                 {
                   "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
@@ -285,7 +276,7 @@
                   "publishedAt": "2026-11-03T06:09:00Z",
                   "officialDomainMatch": false,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 },
                 {
                   "title": "Grève du 5 novembre : Sophie Binet réclame un parcours visible, plus de 200 manifestations annoncées - Social Mag",
@@ -294,16 +285,7 @@
                   "publishedAt": "2026-11-03T03:30:28Z",
                   "officialDomainMatch": false,
                   "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
-                },
-                {
-                  "title": "Grève du 5 novembre dans l’Eure : « Nous avons besoin de tout le monde », préviennent les syndicats - Paris Normandie",
-                  "source": "Paris Normandie",
-                  "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSVdNNTNYV1FYMDJzbmNKOXJwTzQzSklPeXF0T1pBR0JiTV96dk4xeG5nMTJBYnBzS2xBYnVHUEFxWW1qYVdSTnhiYVZpbDRXSEhGbDl5UmlaUkxLSFhzYTE5RjVPZXVGcThuWFBmWExwS0l0R3QweGUta0h4UTExWk1hNFY3RHZiSHpOUFFsN3ZWd1QxMlZGT011RlltaWFCbFN4RnYzMEM5UFhMZXhuby02MWZFTloyUnMtaFd0ZThVNmUxZE5zdXR2VHhoUEJ0Q2c?oc=5",
-                  "publishedAt": "2026-11-02T17:18:00Z",
-                  "officialDomainMatch": false,
-                  "currentFeedSuccess": true,
-                  "lastSuccessAt": "2026-11-04T00:08:55Z"
+                  "lastSuccessAt": "2026-11-04T06:28:25Z"
                 }
               ]
             }
@@ -320,7 +302,7 @@
               "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVRpakJlaVFNRFdYMWVmdXVDeFlldE9fSDZHVXJSMWFSQ3MyUUFKZlJCeEFiQmhKZ3JHMVljTkxuTk1vMm5mWDdURDFjMzllMWI4RVlNQVdWRlc4QUlBaTBKYmJyc1VOeW1NVWpnal93ZDdKZ3dfUHg2VEVLSEY2MlQ1TDMwNFNsLUFIaEdsbmY1V2FPamNN?oc=5",
               "officialDomainMatch": true,
               "currentFeedSuccess": true,
-              "lastSuccessAt": "2026-11-04T00:08:54Z"
+              "lastSuccessAt": "2026-11-04T06:28:24Z"
             }
           ]
         },
@@ -336,8 +318,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -345,8 +327,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -354,8 +336,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -363,8 +345,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -374,8 +356,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -383,8 +365,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -394,8 +376,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -427,8 +409,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -436,8 +418,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -445,8 +427,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -454,8 +436,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -465,8 +447,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -474,8 +456,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -485,8 +467,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -518,8 +500,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -527,8 +509,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -536,8 +518,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -545,8 +527,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -556,8 +538,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -565,8 +547,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -576,8 +558,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -609,8 +591,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -618,8 +600,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -627,8 +609,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -636,8 +618,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -647,8 +629,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -656,8 +638,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -667,8 +649,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -700,8 +682,8 @@
               "id": "police",
               "label": "警方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:23Z",
+              "lastSuccessAt": "2026-11-04T06:28:23Z",
               "itemCount": 12,
               "error": ""
             },
@@ -709,8 +691,8 @@
               "id": "news",
               "label": "媒体报道检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -718,8 +700,8 @@
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:55Z",
-              "lastSuccessAt": "2026-11-04T00:08:55Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 12,
               "error": ""
             },
@@ -727,8 +709,8 @@
               "id": "action_routes",
               "label": "游行路线及集合信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:25Z",
+              "lastSuccessAt": "2026-11-04T06:28:25Z",
               "itemCount": 1,
               "error": ""
             }
@@ -738,8 +720,8 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:54Z",
-              "lastSuccessAt": "2026-11-04T00:08:54Z",
+              "checkedAt": "2026-11-04T06:28:24Z",
+              "lastSuccessAt": "2026-11-04T06:28:24Z",
               "itemCount": 12,
               "error": ""
             },
@@ -747,8 +729,8 @@
               "id": "action_impacts",
               "label": "交通运营影响信息",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -758,8 +740,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-04T00:08:56Z",
-              "lastSuccessAt": "2026-11-04T00:08:56Z",
+              "checkedAt": "2026-11-04T06:28:26Z",
+              "lastSuccessAt": "2026-11-04T06:28:26Z",
               "itemCount": 12,
               "error": ""
             }
@@ -795,6 +777,28 @@
           "sourceHost": "www.prefecturedepolice.interieur.gouv.fr",
           "publisherUrl": "https://www.prefecturedepolice.interieur.gouv.fr",
           "publishedAt": "2017-03-01T09:52:00Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
+          "id": "CBMipAFBVV95cUxQeWhaUHJEbERJX2VZX2dkOXhVb0R3bjI2LURGRnB4X3UtWWRPVlNsSVpDc0RoUzJ0WDRDcEltU0ZzMFJvRFZxWXVtTmNTNkFKTW95UFR5Q1kxelBXeU13RDZENkZFSFQweTRHV3BtbzM2RjdsRHR0YzJfWHVqdS0wS1hJMmV6bzVtZ1hjNTJBNnM3ZkZWRXRyeEJ4Nk54YjVZX2pRQg",
+          "title": "ArrÃªtÃ© interdiction carburant 3 au 5 novembre 26.docx - Préfecture de Police",
+          "description": "ArrÃªtÃ© interdiction carburant 3 au 5 novembre 26.docx Préfecture de Police",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeWhaUHJEbERJX2VZX2dkOXhVb0R3bjI2LURGRnB4X3UtWWRPVlNsSVpDc0RoUzJ0WDRDcEltU0ZzMFJvRFZxWXVtTmNTNkFKTW95UFR5Q1kxelBXeU13RDZENkZFSFQweTRHV3BtbzM2RjdsRHR0YzJfWHVqdS0wS1hJMmV6bzVtZ1hjNTJBNnM3ZkZWRXRyeEJ4Nk54YjVZX2pRQg?oc=5",
+          "source": "Préfecture de Police",
+          "sourceHost": "www.prefecturedepolice.interieur.gouv.fr",
+          "publisherUrl": "https://www.prefecturedepolice.interieur.gouv.fr",
+          "publishedAt": "2026-11-02T08:00:00Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
+          "id": "CBMipAFBVV95cUxOYzhoS0RNQTNQOVFDNThlZUhhdnZINDltSzlNb1ktdVdERkh1QkpPTXh1WkhjRHNSd2NBamUzNUUzZUNrSEZrdXpUVG5WajNUU0FiODJPU1A0RVlWVk9XN1RkZXZ2QWpOZWxVOGxiUTdLU1RsbmlmNzJzX3M4QzVnZE12WF8tWkVOTlBIRDdfMjBMcGotZ0xFdEo0eEhoYklqVGZtUA",
+          "title": "ArrÃªtÃ© 2026-01485 couvre-feu Ã©meutes urbaines 31 au 2 novembre 26 V1.docx - Préfecture de Police",
+          "description": "ArrÃªtÃ© 2026-01485 couvre-feu Ã©meutes urbaines 31 au 2 novembre 26 V1.docx Préfecture de Police",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYzhoS0RNQTNQOVFDNThlZUhhdnZINDltSzlNb1ktdVdERkh1QkpPTXh1WkhjRHNSd2NBamUzNUUzZUNrSEZrdXpUVG5WajNUU0FiODJPU1A0RVlWVk9XN1RkZXZ2QWpOZWxVOGxiUTdLU1RsbmlmNzJzX3M4QzVnZE12WF8tWkVOTlBIRDdfMjBMcGotZ0xFdEo0eEhoYklqVGZtUA?oc=5",
+          "source": "Préfecture de Police",
+          "sourceHost": "www.prefecturedepolice.interieur.gouv.fr",
+          "publisherUrl": "https://www.prefecturedepolice.interieur.gouv.fr",
+          "publishedAt": "2026-11-02T22:19:54Z",
           "publisherDomainMatchesOfficial": true
         },
         {
@@ -884,32 +888,10 @@
           "publisherUrl": "https://www.prefecturedepolice.interieur.gouv.fr",
           "publishedAt": "2026-10-19T07:00:00Z",
           "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMinAFBVV95cUxPaDRuUmY0dHA0bFAtTjRVMGQwbkxWMEVRMGdTaDAxZWkzbUxVeFJuam1ncjJWTXg4UzNCLTB5dzVfcGoxM3pyYnF2U3JONXAzMWladGRNZFJydFl5cVNtRm5NbURKMGdTRDdRRUwxY3EwblhndmtHaTJCdm5rYlVuVl9hc0w3cWNJOW1wd0NzU216U2JMLW1mR2FIRmU",
-          "title": "ARRETE - LOGO - Préfecture de Police",
-          "description": "ARRETE - LOGO Préfecture de Police",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaDRuUmY0dHA0bFAtTjRVMGQwbkxWMEVRMGdTaDAxZWkzbUxVeFJuam1ncjJWTXg4UzNCLTB5dzVfcGoxM3pyYnF2U3JONXAzMWladGRNZFJydFl5cVNtRm5NbURKMGdTRDdRRUwxY3EwblhndmtHaTJCdm5rYlVuVl9hc0w3cWNJOW1wd0NzU216U2JMLW1mR2FIRmU?oc=5",
-          "source": "Préfecture de Police",
-          "sourceHost": "www.prefecturedepolice.interieur.gouv.fr",
-          "publisherUrl": "https://www.prefecturedepolice.interieur.gouv.fr",
-          "publishedAt": "2026-03-31T07:00:00Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMilgFBVV95cUxQaEVaQ1B4ZUY3eWVzMGxlMnk0eXJRQzh0SEQyaGtBaHNiRFhPTkRQNnR0eC0temc1dHRjTDQ3YTFIdWFVWTlYQWlnV3dmb0FXMmhwODJTOG45X0ZYeGctUUhiUmtZUDBRMGdoX3RaWFVsbnFqYWVHdjhGN3dYbk9tdWhna1l3ZGd3SUdhZzlHVHVFODZ1amc",
-          "title": "Communiqués de presse - Préfecture de Police",
-          "description": "Communiqués de presse Préfecture de Police",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaEVaQ1B4ZUY3eWVzMGxlMnk0eXJRQzh0SEQyaGtBaHNiRFhPTkRQNnR0eC0temc1dHRjTDQ3YTFIdWFVWTlYQWlnV3dmb0FXMmhwODJTOG45X0ZYeGctUUhiUmtZUDBRMGdoX3RaWFVsbnFqYWVHdjhGN3dYbk9tdWhna1l3ZGd3SUdhZzlHVHVFODZ1amc?oc=5",
-          "source": "Préfecture de Police",
-          "sourceHost": "www.prefecturedepolice.interieur.gouv.fr",
-          "publisherUrl": "https://www.prefecturedepolice.interieur.gouv.fr",
-          "publishedAt": "2021-06-14T02:14:31Z",
-          "publisherDomainMatchesOfficial": true
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:54Z",
+      "checkedAt": "2026-11-04T06:28:23Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -925,7 +907,7 @@
           "source": "Transilien",
           "sourceHost": "www.transilien.com",
           "publisherUrl": "https://www.transilien.com",
-          "publishedAt": "2026-11-04T00:04:49Z",
+          "publishedAt": "2026-11-04T06:09:39Z",
           "publisherDomainMatchesOfficial": true
         },
         {
@@ -1006,6 +988,17 @@
           "publisherDomainMatchesOfficial": true
         },
         {
+          "id": "CBMiV0FVX3lxTE1yZzFvMThlNkswa25ZeWhCaGF5Q2UtM3RmYjNlTVF4VXVabzBYeGxraENUUjlmX1QwYllULXNXNktjdldBU2tIcWRPRF9MOHl0QVhtVWRmRQ",
+          "title": "Travaux sur le réseau de transports francilien - Île-de-France Mobilités",
+          "description": "Travaux sur le réseau de transports francilien Île-de-France Mobilités",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1yZzFvMThlNkswa25ZeWhCaGF5Q2UtM3RmYjNlTVF4VXVabzBYeGxraENUUjlmX1QwYllULXNXNktjdldBU2tIcWRPRF9MOHl0QVhtVWRmRQ?oc=5",
+          "source": "Île-de-France Mobilités",
+          "sourceHost": "www.iledefrance-mobilites.fr",
+          "publisherUrl": "https://www.iledefrance-mobilites.fr",
+          "publishedAt": "2026-04-09T13:12:55Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
           "id": "CBMiXkFVX3lxTE9MTXBrMVJ1M2FGSVREUThCcjVzZlZOSmNHbVZfekw1X1pfa0lHRGVjaUVWMmptazY3eEVVWWJ6eW13d0tKcmRVNEJZN2FzVHptRnl4ZXRTMWdJV1pwMFE",
           "title": "Schéma de la ligne RER D - Transilien",
           "description": "Schéma de la ligne RER D Transilien",
@@ -1037,21 +1030,10 @@
           "publisherUrl": "https://www.sncf-connect.com",
           "publishedAt": "2022-01-24T21:43:38Z",
           "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiU0FVX3lxTFBnbFM4d19lSXlZb1NaekJMQmJ1M2pLT01hU0lvZnhKcUIySkg2eURaVnlnMG02M211dElka0hVa2NrQXExb01LVUVhdjROSENacEh3",
-          "title": "Demander une attestation de retard - RATP",
-          "description": "Demander une attestation de retard RATP",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnbFM4d19lSXlZb1NaekJMQmJ1M2pLT01hU0lvZnhKcUIySkg2eURaVnlnMG02M211dElka0hVa2NrQXExb01LVUVhdjROSENacEh3?oc=5",
-          "source": "RATP",
-          "sourceHost": "www.ratp.fr",
-          "publisherUrl": "https://www.ratp.fr",
-          "publishedAt": "2025-12-17T13:49:31Z",
-          "publisherDomainMatchesOfficial": true
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:54Z",
+      "checkedAt": "2026-11-04T06:28:24Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -1059,6 +1041,39 @@
       "id": "news",
       "label": "媒体报道检索",
       "items": [
+        {
+          "id": "CBMiuwFBVV95cUxQTmltME1oYXdST0YxTkQ3R0RRV0FtZVMxTDNJREtYSkxTRXNVUmJhb1pPUjRmY2NKaXNlUW5QdUJaSVh0X3RzTUw1cF9pNDhGaldYQ3c3dnlqOHBqMDhsTFZIUHg4QkR4OHVlZy16NU52MmVVdFR3UllWZ3NQR0sxekhyOUFCdlRScmRNMmpEYlNvTDNYYVBQZkREeFpkcFpLWS1obkNwLTRPQWZVQXRBckVBYS1yUFItWUtJ",
+          "title": "Les actualités et infos de ce Mercredi 4 novembre 2026 à Paris et en Ile-de-France - Sortir à Paris",
+          "description": "Les actualités et infos de ce Mercredi 4 novembre 2026 à Paris et en Ile-de-France Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTmltME1oYXdST0YxTkQ3R0RRV0FtZVMxTDNJREtYSkxTRXNVUmJhb1pPUjRmY2NKaXNlUW5QdUJaSVh0X3RzTUw1cF9pNDhGaldYQ3c3dnlqOHBqMDhsTFZIUHg4QkR4OHVlZy16NU52MmVVdFR3UllWZ3NQR0sxekhyOUFCdlRScmRNMmpEYlNvTDNYYVBQZkREeFpkcFpLWS1obkNwLTRPQWZVQXRBckVBYS1yUFItWUtJ?oc=5",
+          "source": "Sortir à Paris",
+          "sourceHost": "www.sortiraparis.com",
+          "publisherUrl": "https://www.sortiraparis.com",
+          "publishedAt": "2026-11-04T04:03:57Z",
+          "publisherDomainMatchesOfficial": false
+        },
+        {
+          "id": "CBMisgFBVV95cUxOUEdyczZlcTFCVUVpQ2VTWjZfWVpFLVc3dUVQdnBVeEZlNlNYb2RzYmNZMXJQZ2JLNDRfNlljZmtzbXdrcHpRQmFXX2dSRDZ6Nmp6M0tsb2NOdUFoRzFRTTQ4VDBfMVJINFhLdWpPVWNrSmZCVEZ4UjUxaW1XeWtObXU5X3lnbHlyVEhRRm14YlpxSEZoLUZIclRibXlocDlMejFxb1o3MTdnWlA3NWljbk5R",
+          "title": "Grève du 5 novembre 2026 : quand le fournisseur et le transporteur s'arrêtent, que décident l'entreprise cliente et ses propres clients - Kohen Avocats",
+          "description": "Grève du 5 novembre 2026 : quand le fournisseur et le transporteur s'arrêtent, que décident l'entreprise cliente et ses propres clients Kohen Avocats",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUEdyczZlcTFCVUVpQ2VTWjZfWVpFLVc3dUVQdnBVeEZlNlNYb2RzYmNZMXJQZ2JLNDRfNlljZmtzbXdrcHpRQmFXX2dSRDZ6Nmp6M0tsb2NOdUFoRzFRTTQ4VDBfMVJINFhLdWpPVWNrSmZCVEZ4UjUxaW1XeWtObXU5X3lnbHlyVEhRRm14YlpxSEZoLUZIclRibXlocDlMejFxb1o3MTdnWlA3NWljbk5R?oc=5",
+          "source": "Kohen Avocats",
+          "sourceHost": "kohenavocats.fr",
+          "publisherUrl": "https://kohenavocats.fr",
+          "publishedAt": "2026-11-03T20:49:03Z",
+          "publisherDomainMatchesOfficial": false
+        },
+        {
+          "id": "CBMiwgFBVV95cUxOOE1GcFVnVnB0bFpjV2NiV3FjZkNPV0hMeE14NWtXVjZPTktLRF9DNF9NTlYwMmE3UG9qX1ZYOEllS204U3RqZHVWSG9JNnJTTDRwWk8xMW9HSnJOYjVzZm9JZ2c1MTgzVjlYZkJobVdTVXY4eXpSb0ExXzJCUnVjVnhJdF93bE4xVVhGRmZDb1RveThiSHB5UWZFZ2IxN2sxQ1NsbExUak9aNW1ZNkFlcHNqWGw5Nm9mdXF4Z19SYTBiZw",
+          "title": "À quoi s’attendre jeudi 5 novembre 2026, journée de grève et de manifestations ? - L'Union",
+          "description": "À quoi s’attendre jeudi 5 novembre 2026, journée de grève et de manifestations ? L'Union",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOE1GcFVnVnB0bFpjV2NiV3FjZkNPV0hMeE14NWtXVjZPTktLRF9DNF9NTlYwMmE3UG9qX1ZYOEllS204U3RqZHVWSG9JNnJTTDRwWk8xMW9HSnJOYjVzZm9JZ2c1MTgzVjlYZkJobVdTVXY4eXpSb0ExXzJCUnVjVnhJdF93bE4xVVhGRmZDb1RveThiSHB5UWZFZ2IxN2sxQ1NsbExUak9aNW1ZNkFlcHNqWGw5Nm9mdXF4Z19SYTBiZw?oc=5",
+          "source": "L'Union",
+          "sourceHost": "www.lunion.fr",
+          "publisherUrl": "https://www.lunion.fr",
+          "publishedAt": "2026-11-02T19:15:01Z",
+          "publisherDomainMatchesOfficial": false
+        },
         {
           "id": "CBMixAFBVV95cUxOaW56RXNheXFhNXAyUzVPa3lreU1UeFR1NWd4dnFIYmJLVFR1MW0yVloxeC1OQ2NSRm9admxFQTZxTWNtMXJKQnJoQ1h5cWdSbi1WZHVrWU90TzF3YWVKWkpxMjI4NV9jUG1zRDR1clhzVE1URkdNcnRsRWV1OFhzcmVVc1QyTktHdmtXelNORTFfUXBuOE5UYU9CYnNxb0g4Rzh5aDloYmcyS01rTWl4RzdfS2FZeXJnbDNfOWlMZWNTbzVG",
           "title": "Grève SNCF du 5 novembre 2026 maintenue : TGV, RER, les prévisions - Sortir à Paris",
@@ -1068,17 +1083,6 @@
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
           "publishedAt": "2026-11-03T17:08:00Z",
-          "publisherDomainMatchesOfficial": false
-        },
-        {
-          "id": "CBMizgFBVV95cUxQNkc4dS0wV3BsSnYtMGNxN0lyYWJINlFoMnNNUlpjQzAwRml5RFNQVm1RRUdRc3YzM0tlR1ZObEZIcEFMX3RRYTg5SnBHSWI0X0wyem96cGEwc3RwbV9oMjd0V1ZOcEE2aHVGRWhkZUdJWmFsX19hNkFUVEhBUnNmRHpUdkhvVVV0MjlPX3FIX0JJc0piZWxwRzY0M2RBdXVtSHIxNTczelJseWJsN25yVFVDaHRoV0wyRkhDQ0dPUTdGVkVCRVBHSUpLSGwwZw",
-          "title": "Que faire ce mardi 3 novembre 2026 à Paris ? Les sorties à ne pas manquer - Sortir à Paris",
-          "description": "Que faire ce mardi 3 novembre 2026 à Paris ? Les sorties à ne pas manquer Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNkc4dS0wV3BsSnYtMGNxN0lyYWJINlFoMnNNUlpjQzAwRml5RFNQVm1RRUdRc3YzM0tlR1ZObEZIcEFMX3RRYTg5SnBHSWI0X0wyem96cGEwc3RwbV9oMjd0V1ZOcEE2aHVGRWhkZUdJWmFsX19hNkFUVEhBUnNmRHpUdkhvVVV0MjlPX3FIX0JJc0piZWxwRzY0M2RBdXVtSHIxNTczelJseWJsN25yVFVDaHRoV0wyRkhDQ0dPUTdGVkVCRVBHSUpLSGwwZw?oc=5",
-          "source": "Sortir à Paris",
-          "sourceHost": "www.sortiraparis.com",
-          "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-03T22:46:52Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1104,36 +1108,14 @@
           "publisherDomainMatchesOfficial": false
         },
         {
-          "id": "CBMijgFBVV95cUxONDJHcTI3NUhZZVNuZmI3M09YWDcxLW00aHAyVnhJSnpTR2Q4dnZYRXpYa2pWTHhLbW1qRUNBcU5Eb2MyR3NPX2IwaXRseTQ5R3RMbWFNc19qWGJIcU9vZm55bFRzeDlzS19KVk9nc1YyTXAwdUdGdkFWbFYtc0kzZUpKeFZKdVF5cnFhZ25n",
-          "title": "[86] Mobilisation interprofessionnelle du 5 novembre 2026 - SE UNSA",
-          "description": "[86] Mobilisation interprofessionnelle du 5 novembre 2026 SE UNSA",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONDJHcTI3NUhZZVNuZmI3M09YWDcxLW00aHAyVnhJSnpTR2Q4dnZYRXpYa2pWTHhLbW1qRUNBcU5Eb2MyR3NPX2IwaXRseTQ5R3RMbWFNc19qWGJIcU9vZm55bFRzeDlzS19KVk9nc1YyTXAwdUdGdkFWbFYtc0kzZUpKeFZKdVF5cnFhZ25n?oc=5",
-          "source": "SE UNSA",
-          "sourceHost": "www.se-unsa.org",
-          "publisherUrl": "https://www.se-unsa.org",
-          "publishedAt": "2026-10-16T07:00:00Z",
-          "publisherDomainMatchesOfficial": false
-        },
-        {
-          "id": "CBMixAFBVV95cUxPS1hHd0pzVktnN3BnMEtSRlBuaEdqSGdYUFJOZERTdjBXaWFMMWw1S0RrX2pqVU12WmUtWW9VNmx1SlA1MDVQemdybjBVNmVuQ19YbjdTV0xPV1JGaXhHZjZnMXk1Y1ZQNXlFVnZtSkNoeXBTOXItY0hHYkhiWHJKQ3h3Mzk3NHhzUlB3TzJFZ3BocnhENl9IRjBlZ0R5dEl3d0dYN214ZlZUV290R0hYUnowd01TRXMzM0ZkX3RaSDJmSXFz",
-          "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
-          "description": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS1hHd0pzVktnN3BnMEtSRlBuaEdqSGdYUFJOZERTdjBXaWFMMWw1S0RrX2pqVU12WmUtWW9VNmx1SlA1MDVQemdybjBVNmVuQ19YbjdTV0xPV1JGaXhHZjZnMXk1Y1ZQNXlFVnZtSkNoeXBTOXItY0hHYkhiWHJKQ3h3Mzk3NHhzUlB3TzJFZ3BocnhENl9IRjBlZ0R5dEl3d0dYN214ZlZUV290R0hYUnowd01TRXMzM0ZkX3RaSDJmSXFz?oc=5",
+          "id": "CBMizgFBVV95cUxQNkc4dS0wV3BsSnYtMGNxN0lyYWJINlFoMnNNUlpjQzAwRml5RFNQVm1RRUdRc3YzM0tlR1ZObEZIcEFMX3RRYTg5SnBHSWI0X0wyem96cGEwc3RwbV9oMjd0V1ZOcEE2aHVGRWhkZUdJWmFsX19hNkFUVEhBUnNmRHpUdkhvVVV0MjlPX3FIX0JJc0piZWxwRzY0M2RBdXVtSHIxNTczelJseWJsN25yVFVDaHRoV0wyRkhDQ0dPUTdGVkVCRVBHSUpLSGwwZw",
+          "title": "Que faire ce mardi 3 novembre 2026 à Paris ? Les sorties à ne pas manquer - Sortir à Paris",
+          "description": "Que faire ce mardi 3 novembre 2026 à Paris ? Les sorties à ne pas manquer Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNkc4dS0wV3BsSnYtMGNxN0lyYWJINlFoMnNNUlpjQzAwRml5RFNQVm1RRUdRc3YzM0tlR1ZObEZIcEFMX3RRYTg5SnBHSWI0X0wyem96cGEwc3RwbV9oMjd0V1ZOcEE2aHVGRWhkZUdJWmFsX19hNkFUVEhBUnNmRHpUdkhvVVV0MjlPX3FIX0JJc0piZWxwRzY0M2RBdXVtSHIxNTczelJseWJsN25yVFVDaHRoV0wyRkhDQ0dPUTdGVkVCRVBHSUpLSGwwZw?oc=5",
           "source": "Sortir à Paris",
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-03T06:09:00Z",
-          "publisherDomainMatchesOfficial": false
-        },
-        {
-          "id": "CBMiuwFBVV95cUxQTmltME1oYXdST0YxTkQ3R0RRV0FtZVMxTDNJREtYSkxTRXNVUmJhb1pPUjRmY2NKaXNlUW5QdUJaSVh0X3RzTUw1cF9pNDhGaldYQ3c3dnlqOHBqMDhsTFZIUHg4QkR4OHVlZy16NU52MmVVdFR3UllWZ3NQR0sxekhyOUFCdlRScmRNMmpEYlNvTDNYYVBQZkREeFpkcFpLWS1obkNwLTRPQWZVQXRBckVBYS1yUFItWUtJ",
-          "title": "Les actualités et infos de ce Mardi 3 novembre 2026 à Paris et en Ile-de-France - Sortir à Paris",
-          "description": "Les actualités et infos de ce Mardi 3 novembre 2026 à Paris et en Ile-de-France Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTmltME1oYXdST0YxTkQ3R0RRV0FtZVMxTDNJREtYSkxTRXNVUmJhb1pPUjRmY2NKaXNlUW5QdUJaSVh0X3RzTUw1cF9pNDhGaldYQ3c3dnlqOHBqMDhsTFZIUHg4QkR4OHVlZy16NU52MmVVdFR3UllWZ3NQR0sxekhyOUFCdlRScmRNMmpEYlNvTDNYYVBQZkREeFpkcFpLWS1obkNwLTRPQWZVQXRBckVBYS1yUFItWUtJ?oc=5",
-          "source": "Sortir à Paris",
-          "sourceHost": "www.sortiraparis.com",
-          "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-03T15:15:45Z",
+          "publishedAt": "2026-11-03T22:46:52Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1148,6 +1130,17 @@
           "publisherDomainMatchesOfficial": false
         },
         {
+          "id": "CBMixAFBVV95cUxPS1hHd0pzVktnN3BnMEtSRlBuaEdqSGdYUFJOZERTdjBXaWFMMWw1S0RrX2pqVU12WmUtWW9VNmx1SlA1MDVQemdybjBVNmVuQ19YbjdTV0xPV1JGaXhHZjZnMXk1Y1ZQNXlFVnZtSkNoeXBTOXItY0hHYkhiWHJKQ3h3Mzk3NHhzUlB3TzJFZ3BocnhENl9IRjBlZ0R5dEl3d0dYN214ZlZUV290R0hYUnowd01TRXMzM0ZkX3RaSDJmSXFz",
+          "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
+          "description": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS1hHd0pzVktnN3BnMEtSRlBuaEdqSGdYUFJOZERTdjBXaWFMMWw1S0RrX2pqVU12WmUtWW9VNmx1SlA1MDVQemdybjBVNmVuQ19YbjdTV0xPV1JGaXhHZjZnMXk1Y1ZQNXlFVnZtSkNoeXBTOXItY0hHYkhiWHJKQ3h3Mzk3NHhzUlB3TzJFZ3BocnhENl9IRjBlZ0R5dEl3d0dYN214ZlZUV290R0hYUnowd01TRXMzM0ZkX3RaSDJmSXFz?oc=5",
+          "source": "Sortir à Paris",
+          "sourceHost": "www.sortiraparis.com",
+          "publisherUrl": "https://www.sortiraparis.com",
+          "publishedAt": "2026-11-03T06:09:00Z",
+          "publisherDomainMatchesOfficial": false
+        },
+        {
           "id": "CBMi2gFBVV95cUxPODdlTl8teXFWRHRya3pjbFN1cndzZFVuNUdWdGxUODNTWDlwRkREMjRTdVBKUnFCWHNtWDVYajY1XzVNTF9OeHU0N0JiejJKXzA5alhxQ3cwdWVIRW9oakZMbmtpM0R3dmFMZ29HcnduSWVlWE9EemE4LVRBTkFsUG5BbFJGR1FZNDZ4S0tfMzMwVjJzUDhFZkRMWEQ3NXdHNGsxNEYxT3J0ZGw2SDZCYnREYWNiQ3VLWUt0WmlhMk1UZlVpdE40elkyb1JCY0NLOHhjNjFjR1ZVZw",
           "title": "Métro, RER : les perturbations de transport cette semaine du 2 au 8 novembre 2026 - Sortir à Paris",
           "description": "Métro, RER : les perturbations de transport cette semaine du 2 au 8 novembre 2026 Sortir à Paris",
@@ -1156,6 +1149,17 @@
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
           "publishedAt": "2026-11-01T07:00:00Z",
+          "publisherDomainMatchesOfficial": false
+        },
+        {
+          "id": "CBMixgFBVV95cUxQbGoxTElPSmtSaTNzRFU1WWFXMnlwWldKbjg3N2hSYjI3R1MyeGxHNnhudDRZZXBTU1E2bkk3X2xaaWVFTUxDMVdXTU9xWkpVMnBPZUx6UHhXNWxoZmwwbnVERmN4VHg2YlB3UFlqWTFZUnJUbmR6dGtWM21GeVZJUE5FUng4cGlvVTBNTzQ1TnF3ejNUcW5TYXYxQjhzaFA0Z2MyWkVXaVlaV1hpZlpsV3J5SzktZWl6UThzejh4U2YyNGFlbkE",
+          "title": "Couvre-feu à Paris des mineurs du 30 octobre au 2 novembre 2026 - Sortir à Paris",
+          "description": "Couvre-feu à Paris des mineurs du 30 octobre au 2 novembre 2026 Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbGoxTElPSmtSaTNzRFU1WWFXMnlwWldKbjg3N2hSYjI3R1MyeGxHNnhudDRZZXBTU1E2bkk3X2xaaWVFTUxDMVdXTU9xWkpVMnBPZUx6UHhXNWxoZmwwbnVERmN4VHg2YlB3UFlqWTFZUnJUbmR6dGtWM21GeVZJUE5FUng4cGlvVTBNTzQ1TnF3ejNUcW5TYXYxQjhzaFA0Z2MyWkVXaVlaV1hpZlpsV3J5SzktZWl6UThzejh4U2YyNGFlbkE?oc=5",
+          "source": "Sortir à Paris",
+          "sourceHost": "www.sortiraparis.com",
+          "publisherUrl": "https://www.sortiraparis.com",
+          "publishedAt": "2026-10-30T10:13:11Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1168,32 +1172,10 @@
           "publisherUrl": "https://www.sortiraparis.com",
           "publishedAt": "2026-11-02T09:23:07Z",
           "publisherDomainMatchesOfficial": false
-        },
-        {
-          "id": "CBMizwFBVV95cUxPd2VrdTZxMjlMRUhab29IUkNRSU1nOVFyX0plbF8tWkVlTlo0ZE1KVXJiWE9xWk5ZLWYzNjluWkUzcGNSVlFUejVEVUJySEpXV0lOcWxSUkMtcmtRVDBodUtpR1JWaDJGemdWbTFpN2ktdVU0VjZscmFsLWRwRWprcy1OREZ4Q3AtblgyY05fTU4tYXFRLTQ3MmpDa2RxUExsdUNPdnhZZGdXOFBvNmpaQ3dLblY0YzdPMHpERUxPc1M5ZndBRnRzZzZMOXFTQW8",
-          "title": "Que faire ce dimanche à Paris ? Sorties incontournables du 8 novembre 2026 - Sortir à Paris",
-          "description": "Que faire ce dimanche à Paris ? Sorties incontournables du 8 novembre 2026 Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPd2VrdTZxMjlMRUhab29IUkNRSU1nOVFyX0plbF8tWkVlTlo0ZE1KVXJiWE9xWk5ZLWYzNjluWkUzcGNSVlFUejVEVUJySEpXV0lOcWxSUkMtcmtRVDBodUtpR1JWaDJGemdWbTFpN2ktdVU0VjZscmFsLWRwRWprcy1OREZ4Q3AtblgyY05fTU4tYXFRLTQ3MmpDa2RxUExsdUNPdnhZZGdXOFBvNmpaQ3dLblY0YzdPMHpERUxPc1M5ZndBRnRzZzZMOXFTQW8?oc=5",
-          "source": "Sortir à Paris",
-          "sourceHost": "www.sortiraparis.com",
-          "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-02T09:23:08Z",
-          "publisherDomainMatchesOfficial": false
-        },
-        {
-          "id": "CBMi3AFBVV95cUxNNy1vMERJLVZkUS1HMnN1NWNfMUNILXdmc2JZWnNFMXZ6MUptS1AzSFYzelR5S3VyNjZIRDN5cy1mcVlQMnJ4T1dGSmF3WVR4YkdGVkEzUUR0Y1Y2ZHN3U0l2eFRGaGNVcHdkM1dRNE9yUTlvajc4VFBoeUdwSG5rVkEweU1Ud2dERlk1NmFJcE5GbEVCczZsVkxxbGt1QWxyZ3NTRDBqaWFYejlpT0RRVlBreW01b1FGZXNQQ1NhbVM5MnJhS1Q5NmVaRnpaTlY1aDN4QUlENTFCRmNI",
-          "title": "Sortir à Paris le 1er novembre 2026 : les événements et rendez-vous à ne pas manquer - Sortir à Paris",
-          "description": "Sortir à Paris le 1er novembre 2026 : les événements et rendez-vous à ne pas manquer Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNy1vMERJLVZkUS1HMnN1NWNfMUNILXdmc2JZWnNFMXZ6MUptS1AzSFYzelR5S3VyNjZIRDN5cy1mcVlQMnJ4T1dGSmF3WVR4YkdGVkEzUUR0Y1Y2ZHN3U0l2eFRGaGNVcHdkM1dRNE9yUTlvajc4VFBoeUdwSG5rVkEweU1Ud2dERlk1NmFJcE5GbEVCczZsVkxxbGt1QWxyZ3NTRDBqaWFYejlpT0RRVlBreW01b1FGZXNQQ1NhbVM5MnJhS1Q5NmVaRnpaTlY1aDN4QUlENTFCRmNI?oc=5",
-          "source": "Sortir à Paris",
-          "sourceHost": "www.sortiraparis.com",
-          "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-01T07:00:00Z",
-          "publisherDomainMatchesOfficial": false
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:55Z",
+      "checkedAt": "2026-11-04T06:28:25Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -1203,13 +1185,13 @@
       "items": [
         {
           "id": "CBMiuwFBVV95cUxQTmltME1oYXdST0YxTkQ3R0RRV0FtZVMxTDNJREtYSkxTRXNVUmJhb1pPUjRmY2NKaXNlUW5QdUJaSVh0X3RzTUw1cF9pNDhGaldYQ3c3dnlqOHBqMDhsTFZIUHg4QkR4OHVlZy16NU52MmVVdFR3UllWZ3NQR0sxekhyOUFCdlRScmRNMmpEYlNvTDNYYVBQZkREeFpkcFpLWS1obkNwLTRPQWZVQXRBckVBYS1yUFItWUtJ",
-          "title": "Les actualités et infos de ce Mardi 3 novembre 2026 à Paris et en Ile-de-France - Sortir à Paris",
-          "description": "Les actualités et infos de ce Mardi 3 novembre 2026 à Paris et en Ile-de-France Sortir à Paris",
+          "title": "Les actualités et infos de ce Mercredi 4 novembre 2026 à Paris et en Ile-de-France - Sortir à Paris",
+          "description": "Les actualités et infos de ce Mercredi 4 novembre 2026 à Paris et en Ile-de-France Sortir à Paris",
           "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTmltME1oYXdST0YxTkQ3R0RRV0FtZVMxTDNJREtYSkxTRXNVUmJhb1pPUjRmY2NKaXNlUW5QdUJaSVh0X3RzTUw1cF9pNDhGaldYQ3c3dnlqOHBqMDhsTFZIUHg4QkR4OHVlZy16NU52MmVVdFR3UllWZ3NQR0sxekhyOUFCdlRScmRNMmpEYlNvTDNYYVBQZkREeFpkcFpLWS1obkNwLTRPQWZVQXRBckVBYS1yUFItWUtJ?oc=5",
           "source": "Sortir à Paris",
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-03T22:12:41Z",
+          "publishedAt": "2026-11-04T04:03:57Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1235,6 +1217,17 @@
           "publisherDomainMatchesOfficial": false
         },
         {
+          "id": "CBMiuwFBVV95cUxORktNVC1WcFUzQjB2ZXcyZ2ZJdnJCOUs4UXAyRHZnWklDUGdSNWpXQ0p1dFh1XzRBYXo1REY5clVSZUpOb0xDTVlKVTNlMkg3VGNidzhUVl8xU1FBSUJNemJxVHp5cXRicTN1bEZzSk9yeXFpM3M1OVJHVURtWU9STmR4WlNLd3RueU9zSThGbkpOYlktZEdLLXVJcm54bEFrajUtOHRwaVJnVXFtVmFIZDZ2VXBqZERVeHF3",
+          "title": "Grève du 5 novembre : où les automobilistes risquent-ils de rester bloqués ? - Auto Plus",
+          "description": "Grève du 5 novembre : où les automobilistes risquent-ils de rester bloqués ? Auto Plus",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORktNVC1WcFUzQjB2ZXcyZ2ZJdnJCOUs4UXAyRHZnWklDUGdSNWpXQ0p1dFh1XzRBYXo1REY5clVSZUpOb0xDTVlKVTNlMkg3VGNidzhUVl8xU1FBSUJNemJxVHp5cXRicTN1bEZzSk9yeXFpM3M1OVJHVURtWU9STmR4WlNLd3RueU9zSThGbkpOYlktZEdLLXVJcm54bEFrajUtOHRwaVJnVXFtVmFIZDZ2VXBqZERVeHF3?oc=5",
+          "source": "Auto Plus",
+          "sourceHost": "www.autoplus.fr",
+          "publisherUrl": "https://www.autoplus.fr",
+          "publishedAt": "2026-11-02T12:20:00Z",
+          "publisherDomainMatchesOfficial": false
+        },
+        {
           "id": "CBMiswFBVV95cUxQU29sZTZvTTYyQV9nTEZmckRyLVNyV19vVDF4b1ZVMGxCd1YyX1Q3bDBqTmRkai1GYXdnbGg1S0NRaXVwMmdQZVJiYk9CV2x3NTRkRmVnVVNJbTBqRzdjQnJINnFKbEJ6My1kdHMwbHVzblFkVUtRb1NaRE1QNTVTby1yQ0dSb3NVamVISHc2czhkMjkwd24wLS1hMnE3X1F3SXktSzg4N1VWODR1TmtCSjdIUQ",
           "title": "Manifestation du 5 novembre à Paris, quel parcours ? - Sortir à Paris",
           "description": "Manifestation du 5 novembre à Paris, quel parcours ? Sortir à Paris",
@@ -1243,17 +1236,6 @@
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
           "publishedAt": "2026-11-03T06:06:42Z",
-          "publisherDomainMatchesOfficial": false
-        },
-        {
-          "id": "CBMi3gFBVV95cUxPc3VzOWJIaXJHSXdmUEJHNEVoeEF6VWxTQzVDdE1Pa0M3Y2xESlgwOFl0aGlnbkEtZXd1MlZ4cUwzOUM0b2lXVGluQk1lWllMcThaSURod252b3c3bW5zY0VfcTR0QWhXYlRnZ1VhMWpqcVltQXZDcWNYRV95OVVOTVNaTExSa1Z3TDUySkV5VmNQY18tYkhBeHNJaHNkVUZ3MFhZR09kUlZSbzN4LWFvaTZJVHRaV2hhV0RXNFp0WS1tNlNlRURNVU1YTzVhdkRZTXZsTkVJa1dhdW1uclE",
-          "title": "Grève et manifestation du 5 novembre à Paris : transports, écoles, parcours, les infos - Sortir à Paris",
-          "description": "Grève et manifestation du 5 novembre à Paris : transports, écoles, parcours, les infos Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc3VzOWJIaXJHSXdmUEJHNEVoeEF6VWxTQzVDdE1Pa0M3Y2xESlgwOFl0aGlnbkEtZXd1MlZ4cUwzOUM0b2lXVGluQk1lWllMcThaSURod252b3c3bW5zY0VfcTR0QWhXYlRnZ1VhMWpqcVltQXZDcWNYRV95OVVOTVNaTExSa1Z3TDUySkV5VmNQY18tYkhBeHNJaHNkVUZ3MFhZR09kUlZSbzN4LWFvaTZJVHRaV2hhV0RXNFp0WS1tNlNlRURNVU1YTzVhdkRZTXZsTkVJa1dhdW1uclE?oc=5",
-          "source": "Sortir à Paris",
-          "sourceHost": "www.sortiraparis.com",
-          "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-03T06:32:00Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1268,14 +1250,14 @@
           "publisherDomainMatchesOfficial": false
         },
         {
-          "id": "CBMizAFBVV95cUxNQkp0Um1wbVcxNGVUSDdfYnpDbUlpNFRZM01vdDdCaUZXV0VIaENrTm54LWl4WGlraW85MUJEeXJndDFNZ3lpa0NJUXk2Z0kwcEJiUGFhR0JfN19PY19yMU45cDhxNDhiV25MUE5IUDJIUklEZmh0OVV5R3YxVkZYYlFJamhCTmtCajR0Nkg1TUNuaTlVNzZYNWdRaGVZX0FPbFVfZlA0WVRNdll4SnJ6QzgxTFNsTS1BMmVSNVQ5Q3R2TVo2VEE0aUEzRXM",
-          "title": "Heures creuses EDF : les nouveaux horaires arrivent ce 4 novembre 2026 - Sortir à Paris",
-          "description": "Heures creuses EDF : les nouveaux horaires arrivent ce 4 novembre 2026 Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQkp0Um1wbVcxNGVUSDdfYnpDbUlpNFRZM01vdDdCaUZXV0VIaENrTm54LWl4WGlraW85MUJEeXJndDFNZ3lpa0NJUXk2Z0kwcEJiUGFhR0JfN19PY19yMU45cDhxNDhiV25MUE5IUDJIUklEZmh0OVV5R3YxVkZYYlFJamhCTmtCajR0Nkg1TUNuaTlVNzZYNWdRaGVZX0FPbFVfZlA0WVRNdll4SnJ6QzgxTFNsTS1BMmVSNVQ5Q3R2TVo2VEE0aUEzRXM?oc=5",
+          "id": "CBMi3gFBVV95cUxPc3VzOWJIaXJHSXdmUEJHNEVoeEF6VWxTQzVDdE1Pa0M3Y2xESlgwOFl0aGlnbkEtZXd1MlZ4cUwzOUM0b2lXVGluQk1lWllMcThaSURod252b3c3bW5zY0VfcTR0QWhXYlRnZ1VhMWpqcVltQXZDcWNYRV95OVVOTVNaTExSa1Z3TDUySkV5VmNQY18tYkhBeHNJaHNkVUZ3MFhZR09kUlZSbzN4LWFvaTZJVHRaV2hhV0RXNFp0WS1tNlNlRURNVU1YTzVhdkRZTXZsTkVJa1dhdW1uclE",
+          "title": "Grève et manifestation du 5 novembre à Paris : transports, écoles, parcours, les infos - Sortir à Paris",
+          "description": "Grève et manifestation du 5 novembre à Paris : transports, écoles, parcours, les infos Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc3VzOWJIaXJHSXdmUEJHNEVoeEF6VWxTQzVDdE1Pa0M3Y2xESlgwOFl0aGlnbkEtZXd1MlZ4cUwzOUM0b2lXVGluQk1lWllMcThaSURod252b3c3bW5zY0VfcTR0QWhXYlRnZ1VhMWpqcVltQXZDcWNYRV95OVVOTVNaTExSa1Z3TDUySkV5VmNQY18tYkhBeHNJaHNkVUZ3MFhZR09kUlZSbzN4LWFvaTZJVHRaV2hhV0RXNFp0WS1tNlNlRURNVU1YTzVhdkRZTXZsTkVJa1dhdW1uclE?oc=5",
           "source": "Sortir à Paris",
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-03T17:15:00Z",
+          "publishedAt": "2026-11-03T06:32:00Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1301,14 +1283,14 @@
           "publisherDomainMatchesOfficial": false
         },
         {
-          "id": "CBMivgFBVV95cUxNVGxYU0Izb2FnMVVQSDZYaVZzZkFzWXRDRHFrd1R6STh0eXR2Q3RudEpUQ1FIYnpvQ0NnT1VDNnVvZC1ITEFfUnZ4RFQ4LUhrR3dIVl91cmF2dThSc0JPOGU2aXpIaThaMnl1WThuWm9EN0EzZ25URXBYcUFjWC1QLUJUc2MzX1JBMVhWZE1SLWR1NncyVlZyc2EtdWhHSWtybTV4WUtEOW1QWHF6MnNrYl9BcnVqLTJyRzlkelJn",
-          "title": "Manifestation et blocage des lycéens ce 2, 3 et 5 novembre - Sortir à Paris",
-          "description": "Manifestation et blocage des lycéens ce 2, 3 et 5 novembre Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVGxYU0Izb2FnMVVQSDZYaVZzZkFzWXRDRHFrd1R6STh0eXR2Q3RudEpUQ1FIYnpvQ0NnT1VDNnVvZC1ITEFfUnZ4RFQ4LUhrR3dIVl91cmF2dThSc0JPOGU2aXpIaThaMnl1WThuWm9EN0EzZ25URXBYcUFjWC1QLUJUc2MzX1JBMVhWZE1SLWR1NncyVlZyc2EtdWhHSWtybTV4WUtEOW1QWHF6MnNrYl9BcnVqLTJyRzlkelJn?oc=5",
+          "id": "CBMi9gFBVV95cUxNRGJJbTlpaFMzb1FsNlN0Mi1nVFRKeFBLODZMa2syMEE2NUdzUXVocDdoQzUxYmtOb0N5YXhGa0R2QS1HN0djTUw0cTJlam5aVXpaS1c1Y0xUOG90a1JRN1VYdlhNZHFrTWpSbW91cEtFTkprejJ3VE85ZEJFeml0SGxuTmNsaTlweVpNVVJlRzBMOHBhLWJfaGJsVTA5VExZcDI4cW8wbzF2UkJLTnpsWXJMQW9IV0FtYlNra0NLV25vRDJsVGNfTTBZcUY3TXM3Y2VkWnhjME1Cblh2SDZVOHAwRWNYVGdVNDZNUTRIcUhsYUt2RWc",
+          "title": "Manifestation du 31 octobre à Paris : parcours modifié par le Conseil d’État, quels secteurs concernés - Sortir à Paris",
+          "description": "Manifestation du 31 octobre à Paris : parcours modifié par le Conseil d’État, quels secteurs concernés Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRGJJbTlpaFMzb1FsNlN0Mi1nVFRKeFBLODZMa2syMEE2NUdzUXVocDdoQzUxYmtOb0N5YXhGa0R2QS1HN0djTUw0cTJlam5aVXpaS1c1Y0xUOG90a1JRN1VYdlhNZHFrTWpSbW91cEtFTkprejJ3VE85ZEJFeml0SGxuTmNsaTlweVpNVVJlRzBMOHBhLWJfaGJsVTA5VExZcDI4cW8wbzF2UkJLTnpsWXJMQW9IV0FtYlNra0NLV25vRDJsVGNfTTBZcUY3TXM3Y2VkWnhjME1Cblh2SDZVOHAwRWNYVGdVNDZNUTRIcUhsYUt2RWc?oc=5",
           "source": "Sortir à Paris",
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
-          "publishedAt": "2026-11-02T05:38:58Z",
+          "publishedAt": "2026-10-31T07:00:00Z",
           "publisherDomainMatchesOfficial": false
         },
         {
@@ -1323,10 +1305,10 @@
           "publisherDomainMatchesOfficial": false
         },
         {
-          "id": "CBMi9gFBVV95cUxNRGJJbTlpaFMzb1FsNlN0Mi1nVFRKeFBLODZMa2syMEE2NUdzUXVocDdoQzUxYmtOb0N5YXhGa0R2QS1HN0djTUw0cTJlam5aVXpaS1c1Y0xUOG90a1JRN1VYdlhNZHFrTWpSbW91cEtFTkprejJ3VE85ZEJFeml0SGxuTmNsaTlweVpNVVJlRzBMOHBhLWJfaGJsVTA5VExZcDI4cW8wbzF2UkJLTnpsWXJMQW9IV0FtYlNra0NLV25vRDJsVGNfTTBZcUY3TXM3Y2VkWnhjME1Cblh2SDZVOHAwRWNYVGdVNDZNUTRIcUhsYUt2RWc",
-          "title": "Manifestation du 31 octobre à Paris : parcours modifié par le Conseil d’État, quels secteurs concernés - Sortir à Paris",
-          "description": "Manifestation du 31 octobre à Paris : parcours modifié par le Conseil d’État, quels secteurs concernés Sortir à Paris",
-          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRGJJbTlpaFMzb1FsNlN0Mi1nVFRKeFBLODZMa2syMEE2NUdzUXVocDdoQzUxYmtOb0N5YXhGa0R2QS1HN0djTUw0cTJlam5aVXpaS1c1Y0xUOG90a1JRN1VYdlhNZHFrTWpSbW91cEtFTkprejJ3VE85ZEJFeml0SGxuTmNsaTlweVpNVVJlRzBMOHBhLWJfaGJsVTA5VExZcDI4cW8wbzF2UkJLTnpsWXJMQW9IV0FtYlNra0NLV25vRDJsVGNfTTBZcUY3TXM3Y2VkWnhjME1Cblh2SDZVOHAwRWNYVGdVNDZNUTRIcUhsYUt2RWc?oc=5",
+          "id": "CBMi5AFBVV95cUxOZjZyZXJXNm4yLVZiLWpfcklDTlU3NGxpd0tDemtfQ0IxQTdXelZEOWdCMExjQk1TbXJEY29DeldTdDh4OTBGRV95MXozalE0azlvZlhuMFV3aVRwODlFMk5sRjJfRkZzYWZzd0ZrWTg3OUFyZXBIYVI0TWd0Z0FlVXgwUU5hMjNfc3NfOW4tUGZ5ZjIyY1JKbjl4eW1PNzA4ZVBXN0MtT0lCbWVqczVITlRNU3NySC1FVXc0RUxwcC0xanQ5bnBlTWd6Ql9kM01oTVUtUWkyWkJUQjhTM21jamlxbTM",
+          "title": "Manifestation du 31 octobre à Paris : métro, parcours encore modifié, ce qu'il faut savoir - Sortir à Paris",
+          "description": "Manifestation du 31 octobre à Paris : métro, parcours encore modifié, ce qu'il faut savoir Sortir à Paris",
+          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZjZyZXJXNm4yLVZiLWpfcklDTlU3NGxpd0tDemtfQ0IxQTdXelZEOWdCMExjQk1TbXJEY29DeldTdDh4OTBGRV95MXozalE0azlvZlhuMFV3aVRwODlFMk5sRjJfRkZzYWZzd0ZrWTg3OUFyZXBIYVI0TWd0Z0FlVXgwUU5hMjNfc3NfOW4tUGZ5ZjIyY1JKbjl4eW1PNzA4ZVBXN0MtT0lCbWVqczVITlRNU3NySC1FVXc0RUxwcC0xanQ5bnBlTWd6Ql9kM01oTVUtUWkyWkJUQjhTM21jamlxbTM?oc=5",
           "source": "Sortir à Paris",
           "sourceHost": "www.sortiraparis.com",
           "publisherUrl": "https://www.sortiraparis.com",
@@ -1335,7 +1317,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:55Z",
+      "checkedAt": "2026-11-04T06:28:25Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -1356,7 +1338,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:56Z",
+      "checkedAt": "2026-11-04T06:28:25Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -1364,6 +1346,17 @@
       "id": "action_impacts",
       "label": "交通运营影响信息",
       "items": [
+        {
+          "id": "CBMiggFBVV95cUxOLWdWSGpCSjluZzRSeURCR2tUWngyUXhRM1gzRzdNZ1ZnUEUtV3lJX0dIVFpUaEdTUmt5elVXSlR3Nkt5Wlg5c1AtM2k3cGFWb05XZi1oZUM4Z1dlY29Rb0xpMGdXdS1sMmxib0xXZ19Nd2toMW9MRUJ4eVhoYmMzRkNB",
+          "title": "Le Récap du WE : travaux et perturbations des 7 prochains jours (24 octobre au 30 octobre) - Bonjour RATP",
+          "description": "Le Récap du WE : travaux et perturbations des 7 prochains jours (24 octobre au 30 octobre) Bonjour RATP",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOLWdWSGpCSjluZzRSeURCR2tUWngyUXhRM1gzRzdNZ1ZnUEUtV3lJX0dIVFpUaEdTUmt5elVXSlR3Nkt5Wlg5c1AtM2k3cGFWb05XZi1oZUM4Z1dlY29Rb0xpMGdXdS1sMmxib0xXZ19Nd2toMW9MRUJ4eVhoYmMzRkNB?oc=5",
+          "source": "Bonjour RATP",
+          "sourceHost": "www.bonjour-ratp.fr",
+          "publisherUrl": "https://www.bonjour-ratp.fr",
+          "publishedAt": "2026-10-22T14:18:33Z",
+          "publisherDomainMatchesOfficial": true
+        },
         {
           "id": "CBMihAFBVV95cUxQMXVpdTVZYWY1Smo3cExydS1XT1o5UjVBd2RDMVhXSV9Wd2ZrN3NIZ0k2ajR1TFIxdGE4UVF1MGJ5dlBPTk13RmZrMGJ5S21IbUpCcjN4SDZpM1h1MXNiWWVxS0VOWi1SY1lOQjdwSU92WjMwUXFqb084alhTdzUyNnVBYW4",
           "title": "Manifestation le 22 octobre 2026 : fermetures de stations - Bonjour RATP",
@@ -1409,6 +1402,17 @@
           "publisherDomainMatchesOfficial": true
         },
         {
+          "id": "CBMihAFBVV95cUxPNmRwQWtJZ25vMWtjVzFfUEtIcWQzQVM1NTFiaEFWNXIxdmJySHRiY3hRcGxDVmcyX1NuMHp1ZXBiYlIxb2p6VVN4dThyRlQ1OVNBNjhvY1QtX2FNR01ZTlQwWE9JdFFraURSdXA1enAzdGREWnpxZ2VlSkVZWWZTaHlQaFQ",
+          "title": "Mesures de sécurité jusqu'au 26 octobre 2026 : fermetures de stations - Bonjour RATP",
+          "description": "Mesures de sécurité jusqu'au 26 octobre 2026 : fermetures de stations Bonjour RATP",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNmRwQWtJZ25vMWtjVzFfUEtIcWQzQVM1NTFiaEFWNXIxdmJySHRiY3hRcGxDVmcyX1NuMHp1ZXBiYlIxb2p6VVN4dThyRlQ1OVNBNjhvY1QtX2FNR01ZTlQwWE9JdFFraURSdXA1enAzdGREWnpxZ2VlSkVZWWZTaHlQaFQ?oc=5",
+          "source": "Bonjour RATP",
+          "sourceHost": "www.bonjour-ratp.fr",
+          "publisherUrl": "https://www.bonjour-ratp.fr",
+          "publishedAt": "2026-10-26T07:00:00Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
           "id": "CBMiggFBVV95cUxNNUdmZUxaUmpqR1QySWZsbUkxc2R5OC1rb0VMWm9sZzRLVFlrMmYwMjlKclNuRGVOQlVtZHFjeFRGVHBJbHREVGt5bVVweWpaYmR4QVJrVm1SMnRmUnM1TWRubnVPU1lheU9ZZ2ViN2RuVDI4UDhObjdmZnhWdFJfQkpn",
           "title": "Le Récap du WE : travaux et perturbations des 7 prochains jours (17 octobre au 23 octobre) - Bonjour RATP",
           "description": "Le Récap du WE : travaux et perturbations des 7 prochains jours (17 octobre au 23 octobre) Bonjour RATP",
@@ -1442,6 +1446,17 @@
           "publisherDomainMatchesOfficial": true
         },
         {
+          "id": "CBMibkFVX3lxTE5IN2VFTXVuQmJGNXRHc2N4dl83WGhxU3JFYXQ0Z3BTN2pnVlpfeWMzdEE0ZVJRX1JIa2J0T3NBV3FUNzl0VE8xLTBkWlFLU2gtdVRnRWZ4YWR6bVRhengza1lkYTNodThCbUhsS3p3",
+          "title": "Grève sur la ligne 13 du métro le vendredi 24 avril 2026 : trafic perturbé - Bonjour RATP",
+          "description": "Grève sur la ligne 13 du métro le vendredi 24 avril 2026 : trafic perturbé Bonjour RATP",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5IN2VFTXVuQmJGNXRHc2N4dl83WGhxU3JFYXQ0Z3BTN2pnVlpfeWMzdEE0ZVJRX1JIa2J0T3NBV3FUNzl0VE8xLTBkWlFLU2gtdVRnRWZ4YWR6bVRhengza1lkYTNodThCbUhsS3p3?oc=5",
+          "source": "Bonjour RATP",
+          "sourceHost": "www.bonjour-ratp.fr",
+          "publisherUrl": "https://www.bonjour-ratp.fr",
+          "publishedAt": "2026-04-24T07:00:00Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
           "id": "CBMigAFBVV95cUxQandkaG1Sc0x3YkVOalM0aC1zNkh0eUxnVXZxZ1pzZmFtZFRReDdqek1fRnpYMXJfNkNGNlVzYy12T3lNYWpKblU3aHRJcVlBZEdEX3NvbDQ1ZVNkRHRpNWhBWDg0SkhoWmw5WTBQSGN6eUNaRzktQVlYZm9YdlU2RQ",
           "title": "Le Récap du WE : travaux et perturbations des 7 prochains jours (3 octobre au 9 octobre) - Bonjour RATP",
           "description": "Le Récap du WE : travaux et perturbations des 7 prochains jours (3 octobre au 9 octobre) Bonjour RATP",
@@ -1462,43 +1477,10 @@
           "publisherUrl": "https://www.bonjour-ratp.fr",
           "publishedAt": "2026-05-01T07:00:00Z",
           "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiXEFVX3lxTE1rblZwSlM2bFFodnBKQjhjU1JUeS02QXpwaS1sTWV0bUpqd2pWVzhFcU00TF9jeTZ5SGY3NUxYOEhMb2RzM1Nsb3BibVBObkE4WmpyN3pHdFBoV3RK",
-          "title": "Bus Ligne 63 : plan, arrêts et horaires en temps réel - Bonjour RATP",
-          "description": "Bus Ligne 63 : plan, arrêts et horaires en temps réel Bonjour RATP",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rblZwSlM2bFFodnBKQjhjU1JUeS02QXpwaS1sTWV0bUpqd2pWVzhFcU00TF9jeTZ5SGY3NUxYOEhMb2RzM1Nsb3BibVBObkE4WmpyN3pHdFBoV3RK?oc=5",
-          "source": "Bonjour RATP",
-          "sourceHost": "www.bonjour-ratp.fr",
-          "publisherUrl": "https://www.bonjour-ratp.fr",
-          "publishedAt": "2023-03-14T22:05:43Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMijgFBVV95cUxNb3J2ZFllcFRDWERhaHVZWVN3Qkg5T3BrNlp0WFN6aUNOZUMySEhqUkFURXhvdWJoX05LT0I1eTE1MWZPMHJQWkpIaWF2ZHJ0VDlBSVQtU01HMmVvR0kxa0lQYWF2RW1pR1VWT1piWVBhQzlHT0x4aTRIaFFJcmVCYnlDSVJpQVZHUVU4Q1Zn",
-          "title": "Bus ligne 277 : plan, arrêts et horaires en temps réel - Bonjour RATP",
-          "description": "Bus ligne 277 : plan, arrêts et horaires en temps réel Bonjour RATP",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNb3J2ZFllcFRDWERhaHVZWVN3Qkg5T3BrNlp0WFN6aUNOZUMySEhqUkFURXhvdWJoX05LT0I1eTE1MWZPMHJQWkpIaWF2ZHJ0VDlBSVQtU01HMmVvR0kxa0lQYWF2RW1pR1VWT1piWVBhQzlHT0x4aTRIaFFJcmVCYnlDSVJpQVZHUVU4Q1Zn?oc=5",
-          "source": "Bonjour RATP",
-          "sourceHost": "www.bonjour-ratp.fr",
-          "publisherUrl": "https://www.bonjour-ratp.fr",
-          "publishedAt": "2026-05-05T00:00:27Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMid0FVX3lxTE9mTzRWTEE0TlRwdm93N1JkYUJydVJENFRhb05CTjI1Zm9ZUG41YlY5MDViQU9WZnI2QjhZdVFaVUVDRXdZU21aN1E4U2x3N0habEQ4TVZfMElma1gwODN5YTFoWXpNQUVYbS0yeVB3RURrMUFwZEpr",
-          "title": "Visite du Pape à Paris les 25 et 26 septembre 2026 : fermetures de stations et interruptions prévues - Bonjour RATP",
-          "description": "Visite du Pape à Paris les 25 et 26 septembre 2026 : fermetures de stations et interruptions prévues Bonjour RATP",
-          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9mTzRWTEE0TlRwdm93N1JkYUJydVJENFRhb05CTjI1Zm9ZUG41YlY5MDViQU9WZnI2QjhZdVFaVUVDRXdZU21aN1E4U2x3N0habEQ4TVZfMElma1gwODN5YTFoWXpNQUVYbS0yeVB3RURrMUFwZEpr?oc=5",
-          "source": "Bonjour RATP",
-          "sourceHost": "www.bonjour-ratp.fr",
-          "publisherUrl": "https://www.bonjour-ratp.fr",
-          "publishedAt": "2026-09-26T07:00:00Z",
-          "publisherDomainMatchesOfficial": true
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:56Z",
+      "checkedAt": "2026-11-04T06:28:26Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -1515,17 +1497,6 @@
           "sourceHost": "www.musee-orsay.fr",
           "publisherUrl": "https://www.musee-orsay.fr",
           "publishedAt": "2018-11-21T14:14:14Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiSEFVX3lxTE96TVlON0VxMXJGMDN1OWdET1R5d2IwOWZybFpQQ212MFA3RVZId2YyMU5WMlNCWnhnZFVwRk4xbVBhRHctNDFVcg",
-          "title": "Musée de l'Orangerie - Musée de l'Orangerie",
-          "description": "Musée de l'Orangerie Musée de l'Orangerie",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE96TVlON0VxMXJGMDN1OWdET1R5d2IwOWZybFpQQ212MFA3RVZId2YyMU5WMlNCWnhnZFVwRk4xbVBhRHctNDFVcg?oc=5",
-          "source": "Musée de l'Orangerie",
-          "sourceHost": "www.musee-orangerie.fr",
-          "publisherUrl": "https://www.musee-orangerie.fr",
-          "publishedAt": "2018-11-14T13:24:49Z",
           "publisherDomainMatchesOfficial": true
         },
         {
@@ -1637,10 +1608,21 @@
           "publisherUrl": "https://www.toureiffel.paris",
           "publishedAt": "2017-11-27T09:29:37Z",
           "publisherDomainMatchesOfficial": true
+        },
+        {
+          "id": "CBMic0FVX3lxTE1heFp6MVY0eUtybGoxcFppaWVkTVpVRm5WdWF5dDhnaHBUdlVpenBJVGVWVC1WaVAydG5YOWVISG1TTF9rVFdwN084SGoyYVgwWWp0ZnZwLTBrU2xGejFfcG1KZGNMdDNvb0J6TjFKa01uSU0",
+          "title": "Expositions temporaires 2024 - Espace presse du musée du Louvre",
+          "description": "Expositions temporaires 2024 Espace presse du musée du Louvre",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1heFp6MVY0eUtybGoxcFppaWVkTVpVRm5WdWF5dDhnaHBUdlVpenBJVGVWVC1WaVAydG5YOWVISG1TTF9rVFdwN084SGoyYVgwWWp0ZnZwLTBrU2xGejFfcG1KZGNMdDNvb0J6TjFKa01uSU0?oc=5",
+          "source": "Espace presse du musée du Louvre",
+          "sourceHost": "presse.louvre.fr",
+          "publisherUrl": "https://presse.louvre.fr",
+          "publishedAt": "2025-04-25T02:01:11Z",
+          "publisherDomainMatchesOfficial": true
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-04T00:08:56Z",
+      "checkedAt": "2026-11-04T06:28:26Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     }
@@ -1691,7 +1673,7 @@
           "publishedAt": "2026-10-18T07:00:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         }
       ]
     },
@@ -1740,7 +1722,7 @@
           "publishedAt": "2026-11-03T07:49:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Manifestation du 5 novembre à Paris, quel parcours ? - Sortir à Paris",
@@ -1749,25 +1731,7 @@
           "publishedAt": "2026-11-03T06:06:42Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
-        },
-        {
-          "title": "Manifestation et blocage des lycéens ce 2, 3 et 5 novembre - Sortir à Paris",
-          "source": "Sortir à Paris",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVGxYU0Izb2FnMVVQSDZYaVZzZkFzWXRDRHFrd1R6STh0eXR2Q3RudEpUQ1FIYnpvQ0NnT1VDNnVvZC1ITEFfUnZ4RFQ4LUhrR3dIVl91cmF2dThSc0JPOGU2aXpIaThaMnl1WThuWm9EN0EzZ25URXBYcUFjWC1QLUJUc2MzX1JBMVhWZE1SLWR1NncyVlZyc2EtdWhHSWtybTV4WUtEOW1QWHF6MnNrYl9BcnVqLTJyRzlkelJn?oc=5",
-          "publishedAt": "2026-11-02T05:38:58Z",
-          "officialDomainMatch": false,
-          "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
-        },
-        {
-          "title": "[86] Mobilisation interprofessionnelle du 5 novembre 2026 - SE UNSA",
-          "source": "SE UNSA",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONDJHcTI3NUhZZVNuZmI3M09YWDcxLW00aHAyVnhJSnpTR2Q4dnZYRXpYa2pWTHhLbW1qRUNBcU5Eb2MyR3NPX2IwaXRseTQ5R3RMbWFNc19qWGJIcU9vZm55bFRzeDlzS19KVk9nc1YyTXAwdUdGdkFWbFYtc0kzZUpKeFZKdVF5cnFhZ25n?oc=5",
-          "publishedAt": "2026-10-16T07:00:00Z",
-          "officialDomainMatch": false,
-          "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         }
       ]
     },
@@ -1803,7 +1767,7 @@
             "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVRpakJlaVFNRFdYMWVmdXVDeFlldE9fSDZHVXJSMWFSQ3MyUUFKZlJCeEFiQmhKZ3JHMVljTkxuTk1vMm5mWDdURDFjMzllMWI4RVlNQVdWRlc4QUlBaTBKYmJyc1VOeW1NVWpnal93ZDdKZ3dfUHg2VEVLSEY2MlQ1TDMwNFNsLUFIaEdsbmY1V2FPamNN?oc=5",
             "officialDomainMatch": true,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-04T00:08:54Z"
+            "lastSuccessAt": "2026-11-04T06:28:24Z"
           },
           {
             "title": "Grève SNCF du 5 novembre 2026 maintenue : TGV, RER, les prévisions - Sortir à Paris",
@@ -1812,7 +1776,7 @@
             "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaW56RXNheXFhNXAyUzVPa3lreU1UeFR1NWd4dnFIYmJLVFR1MW0yVloxeC1OQ2NSRm9admxFQTZxTWNtMXJKQnJoQ1h5cWdSbi1WZHVrWU90TzF3YWVKWkpxMjI4NV9jUG1zRDR1clhzVE1URkdNcnRsRWV1OFhzcmVVc1QyTktHdmtXelNORTFfUXBuOE5UYU9CYnNxb0g4Rzh5aDloYmcyS01rTWl4RzdfS2FZeXJnbDNfOWlMZWNTbzVG?oc=5",
             "officialDomainMatch": false,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-04T00:08:55Z"
+            "lastSuccessAt": "2026-11-04T06:28:25Z"
           },
           {
             "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
@@ -1821,7 +1785,7 @@
             "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS1hHd0pzVktnN3BnMEtSRlBuaEdqSGdYUFJOZERTdjBXaWFMMWw1S0RrX2pqVU12WmUtWW9VNmx1SlA1MDVQemdybjBVNmVuQ19YbjdTV0xPV1JGaXhHZjZnMXk1Y1ZQNXlFVnZtSkNoeXBTOXItY0hHYkhiWHJKQ3h3Mzk3NHhzUlB3TzJFZ3BocnhENl9IRjBlZ0R5dEl3d0dYN214ZlZUV290R0hYUnowd01TRXMzM0ZkX3RaSDJmSXFz?oc=5",
             "officialDomainMatch": false,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-04T00:08:55Z"
+            "lastSuccessAt": "2026-11-04T06:28:25Z"
           }
         ]
       },
@@ -1841,10 +1805,19 @@
           "title": "Info Grève : mouvement social national interprofessionnel du 05 novembre 2026 - Transilien",
           "source": "Transilien",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVRpakJlaVFNRFdYMWVmdXVDeFlldE9fSDZHVXJSMWFSQ3MyUUFKZlJCeEFiQmhKZ3JHMVljTkxuTk1vMm5mWDdURDFjMzllMWI4RVlNQVdWRlc4QUlBaTBKYmJyc1VOeW1NVWpnal93ZDdKZ3dfUHg2VEVLSEY2MlQ1TDMwNFNsLUFIaEdsbmY1V2FPamNN?oc=5",
-          "publishedAt": "2026-11-04T00:04:49Z",
+          "publishedAt": "2026-11-04T06:09:39Z",
           "officialDomainMatch": true,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:54Z"
+          "lastSuccessAt": "2026-11-04T06:28:24Z"
+        },
+        {
+          "title": "Grève du 5 novembre 2026 : quand le fournisseur et le transporteur s'arrêtent, que décident l'entreprise cliente et ses propres clients - Kohen Avocats",
+          "source": "Kohen Avocats",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUEdyczZlcTFCVUVpQ2VTWjZfWVpFLVc3dUVQdnBVeEZlNlNYb2RzYmNZMXJQZ2JLNDRfNlljZmtzbXdrcHpRQmFXX2dSRDZ6Nmp6M0tsb2NOdUFoRzFRTTQ4VDBfMVJINFhLdWpPVWNrSmZCVEZ4UjUxaW1XeWtObXU5X3lnbHlyVEhRRm14YlpxSEZoLUZIclRibXlocDlMejFxb1o3MTdnWlA3NWljbk5R?oc=5",
+          "publishedAt": "2026-11-03T20:49:03Z",
+          "officialDomainMatch": false,
+          "currentFeedSuccess": true,
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève SNCF du 5 novembre 2026 maintenue : TGV, RER, les prévisions - Sortir à Paris",
@@ -1853,7 +1826,7 @@
           "publishedAt": "2026-11-03T17:08:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève et manifestation du 5 novembre à Paris : transports, écoles, parcours, les infos - Sortir à Paris",
@@ -1862,7 +1835,7 @@
           "publishedAt": "2026-11-03T06:32:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
@@ -1871,7 +1844,7 @@
           "publishedAt": "2026-11-03T06:09:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève du 5 novembre : Sophie Binet réclame un parcours visible, plus de 200 manifestations annoncées - Social Mag",
@@ -1880,65 +1853,7 @@
           "publishedAt": "2026-11-03T03:30:28Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
-        },
-        {
-          "title": "Grève du 5 novembre dans l’Eure : « Nous avons besoin de tout le monde », préviennent les syndicats - Paris Normandie",
-          "source": "Paris Normandie",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSVdNNTNYV1FYMDJzbmNKOXJwTzQzSklPeXF0T1pBR0JiTV96dk4xeG5nMTJBYnBzS2xBYnVHUEFxWW1qYVdSTnhiYVZpbDRXSEhGbDl5UmlaUkxLSFhzYTE5RjVPZXVGcThuWFBmWExwS0l0R3QweGUta0h4UTExWk1hNFY3RHZiSHpOUFFsN3ZWd1QxMlZGT011RlltaWFCbFN4RnYzMEM5UFhMZXhuby02MWZFTloyUnMtaFd0ZThVNmUxZE5zdXR2VHhoUEJ0Q2c?oc=5",
-          "publishedAt": "2026-11-02T17:18:00Z",
-          "officialDomainMatch": false,
-          "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
-        }
-      ]
-    },
-    {
-      "id": "2026-11-20-demonstration",
-      "date": "2026-11-20",
-      "category": "demonstration",
-      "label": "游行/集会行动",
-      "status": "媒体/新闻标题线索；待官方核实",
-      "route": {
-        "status": "待核实",
-        "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。",
-        "evidence": []
-      },
-      "meetingTime": {
-        "status": "待核实",
-        "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。",
-        "evidence": []
-      },
-      "districts": {
-        "status": "待核实",
-        "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。",
-        "evidence": []
-      },
-      "transport": {
-        "status": "待核实",
-        "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。",
-        "evidence": []
-      },
-      "venues": {
-        "status": "待核实",
-        "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。",
-        "evidence": []
-      },
-      "venueOfficial": {
-        "status": "待核实",
-        "value": "标题/摘要中没有匹配到相关细节；请打开原文及当天官方公告核对。",
-        "evidence": []
-      },
-      "venueWatchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特",
-      "sources": [
-        {
-          "title": "[86] Mobilisation interprofessionnelle du 5 novembre 2026 - SE UNSA",
-          "source": "SE UNSA",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONDJHcTI3NUhZZVNuZmI3M09YWDcxLW00aHAyVnhJSnpTR2Q4dnZYRXpYa2pWTHhLbW1qRUNBcU5Eb2MyR3NPX2IwaXRseTQ5R3RMbWFNc19qWGJIcU9vZm55bFRzeDlzS19KVk9nc1YyTXAwdUdGdkFWbFYtc0kzZUpKeFZKdVF5cnFhZ25n?oc=5",
-          "publishedAt": "2026-10-16T07:00:00Z",
-          "officialDomainMatch": false,
-          "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         }
       ]
     },
@@ -1974,7 +1889,7 @@
             "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVRpakJlaVFNRFdYMWVmdXVDeFlldE9fSDZHVXJSMWFSQ3MyUUFKZlJCeEFiQmhKZ3JHMVljTkxuTk1vMm5mWDdURDFjMzllMWI4RVlNQVdWRlc4QUlBaTBKYmJyc1VOeW1NVWpnal93ZDdKZ3dfUHg2VEVLSEY2MlQ1TDMwNFNsLUFIaEdsbmY1V2FPamNN?oc=5",
             "officialDomainMatch": true,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-04T00:08:54Z"
+            "lastSuccessAt": "2026-11-04T06:28:24Z"
           },
           {
             "title": "Grève SNCF du 5 novembre 2026 maintenue : TGV, RER, les prévisions - Sortir à Paris",
@@ -1983,7 +1898,7 @@
             "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaW56RXNheXFhNXAyUzVPa3lreU1UeFR1NWd4dnFIYmJLVFR1MW0yVloxeC1OQ2NSRm9admxFQTZxTWNtMXJKQnJoQ1h5cWdSbi1WZHVrWU90TzF3YWVKWkpxMjI4NV9jUG1zRDR1clhzVE1URkdNcnRsRWV1OFhzcmVVc1QyTktHdmtXelNORTFfUXBuOE5UYU9CYnNxb0g4Rzh5aDloYmcyS01rTWl4RzdfS2FZeXJnbDNfOWlMZWNTbzVG?oc=5",
             "officialDomainMatch": false,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-04T00:08:55Z"
+            "lastSuccessAt": "2026-11-04T06:28:25Z"
           },
           {
             "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
@@ -1992,7 +1907,7 @@
             "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPS1hHd0pzVktnN3BnMEtSRlBuaEdqSGdYUFJOZERTdjBXaWFMMWw1S0RrX2pqVU12WmUtWW9VNmx1SlA1MDVQemdybjBVNmVuQ19YbjdTV0xPV1JGaXhHZjZnMXk1Y1ZQNXlFVnZtSkNoeXBTOXItY0hHYkhiWHJKQ3h3Mzk3NHhzUlB3TzJFZ3BocnhENl9IRjBlZ0R5dEl3d0dYN214ZlZUV290R0hYUnowd01TRXMzM0ZkX3RaSDJmSXFz?oc=5",
             "officialDomainMatch": false,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-04T00:08:55Z"
+            "lastSuccessAt": "2026-11-04T06:28:25Z"
           }
         ]
       },
@@ -2012,10 +1927,19 @@
           "title": "Info Grève : mouvement social national interprofessionnel du 05 novembre 2026 - Transilien",
           "source": "Transilien",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWVRpakJlaVFNRFdYMWVmdXVDeFlldE9fSDZHVXJSMWFSQ3MyUUFKZlJCeEFiQmhKZ3JHMVljTkxuTk1vMm5mWDdURDFjMzllMWI4RVlNQVdWRlc4QUlBaTBKYmJyc1VOeW1NVWpnal93ZDdKZ3dfUHg2VEVLSEY2MlQ1TDMwNFNsLUFIaEdsbmY1V2FPamNN?oc=5",
-          "publishedAt": "2026-11-04T00:04:49Z",
+          "publishedAt": "2026-11-04T06:09:39Z",
           "officialDomainMatch": true,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:54Z"
+          "lastSuccessAt": "2026-11-04T06:28:24Z"
+        },
+        {
+          "title": "Grève du 5 novembre 2026 : quand le fournisseur et le transporteur s'arrêtent, que décident l'entreprise cliente et ses propres clients - Kohen Avocats",
+          "source": "Kohen Avocats",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUEdyczZlcTFCVUVpQ2VTWjZfWVpFLVc3dUVQdnBVeEZlNlNYb2RzYmNZMXJQZ2JLNDRfNlljZmtzbXdrcHpRQmFXX2dSRDZ6Nmp6M0tsb2NOdUFoRzFRTTQ4VDBfMVJINFhLdWpPVWNrSmZCVEZ4UjUxaW1XeWtObXU5X3lnbHlyVEhRRm14YlpxSEZoLUZIclRibXlocDlMejFxb1o3MTdnWlA3NWljbk5R?oc=5",
+          "publishedAt": "2026-11-03T20:49:03Z",
+          "officialDomainMatch": false,
+          "currentFeedSuccess": true,
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève SNCF du 5 novembre 2026 maintenue : TGV, RER, les prévisions - Sortir à Paris",
@@ -2024,7 +1948,7 @@
           "publishedAt": "2026-11-03T17:08:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève SNCF du 5 novembre 2026 : TGV, RER, Transilien, ce qu'on sait - Sortir à Paris",
@@ -2033,7 +1957,16 @@
           "publishedAt": "2026-11-03T06:09:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
+        },
+        {
+          "title": "À quoi s’attendre jeudi 5 novembre 2026, journée de grève et de manifestations ? - L'Union",
+          "source": "L'Union",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOE1GcFVnVnB0bFpjV2NiV3FjZkNPV0hMeE14NWtXVjZPTktLRF9DNF9NTlYwMmE3UG9qX1ZYOEllS204U3RqZHVWSG9JNnJTTDRwWk8xMW9HSnJOYjVzZm9JZ2c1MTgzVjlYZkJobVdTVXY4eXpSb0ExXzJCUnVjVnhJdF93bE4xVVhGRmZDb1RveThiSHB5UWZFZ2IxN2sxQ1NsbExUak9aNW1ZNkFlcHNqWGw5Nm9mdXF4Z19SYTBiZw?oc=5",
+          "publishedAt": "2026-11-02T19:15:01Z",
+          "officialDomainMatch": false,
+          "currentFeedSuccess": true,
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         },
         {
           "title": "Grève générale du 5 novembre 2026 : transports, écoles, une grosse mobilisation attendue - Sortir à Paris",
@@ -2042,7 +1975,7 @@
           "publishedAt": "2026-10-21T07:00:00Z",
           "officialDomainMatch": false,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-04T00:08:55Z"
+          "lastSuccessAt": "2026-11-04T06:28:25Z"
         }
       ]
     }
