@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T15:17:38Z",
+  "generatedAt": "2026-11-16T23:48:46Z",
   "trip": {
     "startDate": "2026-11-03",
     "endDate": "2026-11-09",
@@ -9,25 +9,25 @@
     "startDate": "2026-11-03",
     "endDate": "2026-11-09",
     "focusDate": "2026-11-05",
-    "updatedAt": "2026-11-16T15:17:38Z",
+    "updatedAt": "2026-11-16T23:48:46Z",
     "priority": "集体游行/罢工优先；每天同时检查交通和景点/场馆影响",
     "days": [
       {
         "date": "2026-11-03",
         "focus": false,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -36,38 +36,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -75,19 +75,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -95,8 +95,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -107,18 +107,18 @@
         "date": "2026-11-04",
         "focus": false,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -127,38 +127,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -166,19 +166,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -186,8 +186,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -198,18 +198,18 @@
         "date": "2026-11-05",
         "focus": true,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -218,38 +218,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -257,19 +257,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -277,8 +277,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -289,18 +289,18 @@
         "date": "2026-11-06",
         "focus": false,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -309,38 +309,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -348,19 +348,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -368,8 +368,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -380,18 +380,18 @@
         "date": "2026-11-07",
         "focus": false,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -400,38 +400,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -439,19 +439,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -459,8 +459,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -471,18 +471,18 @@
         "date": "2026-11-08",
         "focus": false,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -491,38 +491,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -530,19 +530,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -550,8 +550,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -562,18 +562,18 @@
         "date": "2026-11-09",
         "focus": false,
         "collective": {
-          "status": "暂未检索到集体行动日期线索",
-          "value": "暂未检索到当天集体游行、罢工或集会的日期线索；不等于当天没有活动。",
+          "status": "来源刷新失败，无法判断",
+          "value": "行动源本轮有失败，请打开警方及媒体来源核对。",
           "events": []
         },
         "transport": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天交通关闭、改道或运力变化线索；不等于线路一定正常。",
+          "status": "来源刷新失败，无法判断",
+          "value": "交通信息源本轮刷新失败，无法判断当天线路状态；请打开对应官方公告核对。",
           "evidence": []
         },
         "venues": {
-          "status": "未检索到当天确认线索",
-          "value": "暂未检索到当天景点/场馆影响线索；不等于保证开放。",
+          "status": "来源刷新失败，无法判断",
+          "value": "景点/场馆相关信息源本轮刷新失败，无法判断当天影响；请打开对应官方公告核对。",
           "evidence": [],
           "watchList": "卢浮宫、奥赛博物馆、橘园美术馆、蓬皮杜中心、埃菲尔铁塔、圣礼拜堂、凡尔赛宫、凯旋门、荣军院、蒙马特"
         },
@@ -582,38 +582,38 @@
             {
               "id": "police",
               "label": "警方公告检索线索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:38Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:38Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "news",
               "label": "媒体报道检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_dates",
               "label": "巴黎未来行动日期检索",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:39Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             },
             {
               "id": "action_routes",
               "label": "游行路线及集合信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 1,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "transport": [
@@ -621,19 +621,19 @@
               "id": "transport",
               "label": "交通运营商检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:39Z",
-              "lastSuccessAt": "2026-11-16T15:17:39Z",
+              "checkedAt": "2026-11-16T23:48:47Z",
+              "lastSuccessAt": "2026-11-16T23:48:47Z",
               "itemCount": 12,
               "error": ""
             },
             {
               "id": "action_impacts",
               "label": "交通运营影响信息",
-              "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
+              "ok": false,
+              "checkedAt": "2026-11-16T23:48:46Z",
               "lastSuccessAt": "2026-11-16T15:17:40Z",
               "itemCount": 12,
-              "error": ""
+              "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）"
             }
           ],
           "venues": [
@@ -641,8 +641,8 @@
               "id": "venue_impacts",
               "label": "景点/场馆官方公告检索线索",
               "ok": true,
-              "checkedAt": "2026-11-16T15:17:40Z",
-              "lastSuccessAt": "2026-11-16T15:17:40Z",
+              "checkedAt": "2026-11-16T23:48:49Z",
+              "lastSuccessAt": "2026-11-16T23:48:49Z",
               "itemCount": 12,
               "error": ""
             }
@@ -791,9 +791,10 @@
           "publisherDomainMatchesOfficial": true
         }
       ],
-      "ok": true,
-      "checkedAt": "2026-11-16T15:17:38Z",
-      "error": "",
+      "ok": false,
+      "checkedAt": "2026-11-16T23:48:46Z",
+      "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）",
+      "lastSuccessAt": "2026-11-16T15:17:38Z",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
     {
@@ -809,6 +810,17 @@
           "sourceHost": "www.transilien.com",
           "publisherUrl": "https://www.transilien.com",
           "publishedAt": "2026-11-15T16:18:22Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
+          "id": "CBMiR0FVX3lxTE1QUEcwS2lqN3AwSzF0X19DLW44U0dfeGZ1RG5tVVp6Ums4MXU4Y3RUMmZfc2dsUFFIaTZleEN5bGRRS2IzVWNj",
+          "title": "Information trafic bulletin général - RATP",
+          "description": "Information trafic bulletin général RATP",
+          "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1QUEcwS2lqN3AwSzF0X19DLW44U0dfeGZ1RG5tVVp6Ums4MXU4Y3RUMmZfc2dsUFFIaTZleEN5bGRRS2IzVWNj?oc=5",
+          "source": "RATP",
+          "sourceHost": "www.ratp.fr",
+          "publisherUrl": "https://www.ratp.fr",
+          "publishedAt": "2017-06-12T08:51:42Z",
           "publisherDomainMatchesOfficial": true
         },
         {
@@ -856,6 +868,17 @@
           "publisherDomainMatchesOfficial": true
         },
         {
+          "id": "CBMiUkFVX3lxTE5QaW9Ta0o5R1FfYV9JaWVRYURrcE52ZllpZkxEQWtCMnBXbkRTQTNNQXktaGNoczhDUm05Mlo3WjRxRXZYTUk1eThQN3JYTWJvbUE",
+          "title": "Information Trafic : Métro, RER, Tramway, Transilien - Bonjour RATP",
+          "description": "Information Trafic : Métro, RER, Tramway, Transilien Bonjour RATP",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5QaW9Ta0o5R1FfYV9JaWVRYURrcE52ZllpZkxEQWtCMnBXbkRTQTNNQXktaGNoczhDUm05Mlo3WjRxRXZYTUk1eThQN3JYTWJvbUE?oc=5",
+          "source": "Bonjour RATP",
+          "sourceHost": "www.bonjour-ratp.fr",
+          "publisherUrl": "https://www.bonjour-ratp.fr",
+          "publishedAt": "2022-12-09T00:15:51Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
           "id": "CBMitARBVV95cUxNTXhUbWZaZmx6VmdOTHpIVlhadURsV256VjRtNnpJNHZGckhKQXlZSll1UVBvVi1KN19ibFJ4dXlDQjhScXFkRm9maW1Qd013VGhtaXFSUmRQblJJcHUxeWt6Vmd4YVJXQXlZRGlSU1JDbjRkZGxqQXlMMFNXSzVZYkFzeEJJWVJOWFBFeF8wc3AxSmNPNnhqWEFSQ3dtRTNzdElMa2xHWGlFRjI5UlcxcnRiX245SmR4UEdxclN5WlAza2VMbUZsemhqZ1FFMjljWFFMN0FXREZwNzFWUllTQUZfa1RqcHNlWXdkZDRPRlN3UnBTWEVacnpiM19TVjA2U2NLQ3ZtNm15UmkzTkp2bWJHeW83amZ4WFlucW1nVVFfbk9PZFdMVV9vOFFfMDM0SUs2dXlPMEsyRTlqU3BZanpTdHFpWVlWbHZFRHFfNUhhUEhlRFhUdXo1V082Um1DXzdWZkFYYVRwek1BSF9iSjhvQnVxQnBrMnlXcGNqcjRkOGoxZjlBMUs5TENYdlNTdTlXQXNQLVNBT1I0a1pJcWhRNDVoMy1RYVR5aUR6dmlxU2FtYTlCWUxVbXR2X1RFaU9Id1V1ak5Xb1ZLSm5uZ3gtQVpaaXlmQnlKazRuVkdXY19JVkx6UWYyUndmak1vbWlJY3ktQmsyb2lCZWZ4ZUlvei1BLUowVkpscUx3bzZlUk01dXpDZ2NmY2d3eWhqT09JOW14b2pmWUJRZEdsZnlibzU",
           "title": "Paris Montparnasse - tracking.bonjour-ratp.fr",
           "description": "Paris Montparnasse tracking.bonjour-ratp.fr",
@@ -878,6 +901,28 @@
           "publisherDomainMatchesOfficial": true
         },
         {
+          "id": "CBMiQkFVX3lxTE04RnY4enhxUlNLWE14OXBncFRnTEgyQzdldVc5Y0dUczR4X0M4N3lXWk1tZVNwdzAzUkZzNm43MjJHUQ",
+          "title": "Bonjour RATP - Transports en commun à Paris et en Île-de-France - Bonjour RATP",
+          "description": "Bonjour RATP - Transports en commun à Paris et en Île-de-France Bonjour RATP",
+          "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE04RnY4enhxUlNLWE14OXBncFRnTEgyQzdldVc5Y0dUczR4X0M4N3lXWk1tZVNwdzAzUkZzNm43MjJHUQ?oc=5",
+          "source": "Bonjour RATP",
+          "sourceHost": "www.bonjour-ratp.fr",
+          "publisherUrl": "https://www.bonjour-ratp.fr",
+          "publishedAt": "2022-11-16T13:55:57Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
+          "id": "CBMiXkFVX3lxTFBndDdrMklQdklfQ2h4aUpVTG1yWVQzamJtNDZmSG1TYV9hX0k3YWxlUkR5X2tmdTg5RnNsU3hQNG81MlVXR1BYZEQ2S0hLTTg0Q29MSl9LeVdhS1hIanc",
+          "title": "Schéma de la ligne RER C - Transilien",
+          "description": "Schéma de la ligne RER C Transilien",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBndDdrMklQdklfQ2h4aUpVTG1yWVQzamJtNDZmSG1TYV9hX0k3YWxlUkR5X2tmdTg5RnNsU3hQNG81MlVXR1BYZEQ2S0hLTTg0Q29MSl9LeVdhS1hIanc?oc=5",
+          "source": "Transilien",
+          "sourceHost": "www.transilien.com",
+          "publisherUrl": "https://www.transilien.com",
+          "publishedAt": "2021-04-14T13:15:24Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
           "id": "CBMiXkFVX3lxTE9MTXBrMVJ1M2FGSVREUThCcjVzZlZOSmNHbVZfekw1X1pfa0lHRGVjaUVWMmptazY3eEVVWWJ6eW13d0tKcmRVNEJZN2FzVHptRnl4ZXRTMWdJV1pwMFE",
           "title": "Schéma de la ligne RER D - Transilien",
           "description": "Schéma de la ligne RER D Transilien",
@@ -887,54 +932,10 @@
           "publisherUrl": "https://www.transilien.com",
           "publishedAt": "2021-04-14T13:13:32Z",
           "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiRkFVX3lxTE1LaWJaOXNfZGVDZjlqQmpTQ1dQREtJUHFMc1h0MkplbXlrY2NUMWRhWmJ4djRUVGxYTGh6Wmt3LV96eFJESmc",
-          "title": "Itinéraires métro, bus, tramway, transilien, noctilien - RATP",
-          "description": "Itinéraires métro, bus, tramway, transilien, noctilien RATP",
-          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1LaWJaOXNfZGVDZjlqQmpTQ1dQREtJUHFMc1h0MkplbXlrY2NUMWRhWmJ4djRUVGxYTGh6Wmt3LV96eFJESmc?oc=5",
-          "source": "RATP",
-          "sourceHost": "www.ratp.fr",
-          "publisherUrl": "https://www.ratp.fr",
-          "publishedAt": "2017-06-12T08:41:25Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiX0FVX3lxTE1LWHY1NjI0RVVweXpBX3Rtbm1JVFNBMHpkVE4xYTRSTE9mMFBsUEVRYUlvelpsVmhwZE1GNHVWUjBuQXhRRThEY0xBSmxYcHpKWTEzaE52ZjQtTW5vZEI4",
-          "title": "Horaires des trains SNCF en direct : suivre son train en temps réel - SNCF Connect",
-          "description": "Horaires des trains SNCF en direct : suivre son train en temps réel SNCF Connect",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1LWHY1NjI0RVVweXpBX3Rtbm1JVFNBMHpkVE4xYTRSTE9mMFBsUEVRYUlvelpsVmhwZE1GNHVWUjBuQXhRRThEY0xBSmxYcHpKWTEzaE52ZjQtTW5vZEI4?oc=5",
-          "source": "SNCF Connect",
-          "sourceHost": "www.sncf-connect.com",
-          "publisherUrl": "https://www.sncf-connect.com",
-          "publishedAt": "2022-01-24T21:43:38Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiU0FVX3lxTFBnbFM4d19lSXlZb1NaekJMQmJ1M2pLT01hU0lvZnhKcUIySkg2eURaVnlnMG02M211dElka0hVa2NrQXExb01LVUVhdjROSENacEh3",
-          "title": "Demander une attestation de retard - RATP",
-          "description": "Demander une attestation de retard RATP",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnbFM4d19lSXlZb1NaekJMQmJ1M2pLT01hU0lvZnhKcUIySkg2eURaVnlnMG02M211dElka0hVa2NrQXExb01LVUVhdjROSENacEh3?oc=5",
-          "source": "RATP",
-          "sourceHost": "www.ratp.fr",
-          "publisherUrl": "https://www.ratp.fr",
-          "publishedAt": "2025-12-17T13:49:31Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
-          "id": "CBMiWkFVX3lxTE9VLW44RkNjMjFxcjVBX04tQ1hsdTcwdFVqU0VjX0g1bzdvcmZqcUllWTVkYnVwSG1wVlZkdW1uemxvT0U3UGNHS2hqQjR1NFBLYjZJcUpadkxsQQ",
-          "title": "Forfait imagine R : découvrez votre tarif | Souscription et renouvellement du passe - Île-de-France Mobilités",
-          "description": "Forfait imagine R : découvrez votre tarif | Souscription et renouvellement du passe Île-de-France Mobilités",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VLW44RkNjMjFxcjVBX04tQ1hsdTcwdFVqU0VjX0g1bzdvcmZqcUllWTVkYnVwSG1wVlZkdW1uemxvT0U3UGNHS2hqQjR1NFBLYjZJcUpadkxsQQ?oc=5",
-          "source": "Île-de-France Mobilités",
-          "sourceHost": "www.iledefrance-mobilites.fr",
-          "publisherUrl": "https://www.iledefrance-mobilites.fr",
-          "publishedAt": "2021-06-16T09:02:37Z",
-          "publisherDomainMatchesOfficial": true
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-16T15:17:39Z",
+      "checkedAt": "2026-11-16T23:48:47Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
@@ -1075,9 +1076,10 @@
           "publisherDomainMatchesOfficial": false
         }
       ],
-      "ok": true,
-      "checkedAt": "2026-11-16T15:17:39Z",
-      "error": "",
+      "ok": false,
+      "checkedAt": "2026-11-16T23:48:46Z",
+      "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）",
+      "lastSuccessAt": "2026-11-16T15:17:39Z",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
     {
@@ -1217,9 +1219,10 @@
           "publisherDomainMatchesOfficial": false
         }
       ],
-      "ok": true,
-      "checkedAt": "2026-11-16T15:17:39Z",
-      "error": "",
+      "ok": false,
+      "checkedAt": "2026-11-16T23:48:46Z",
+      "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）",
+      "lastSuccessAt": "2026-11-16T15:17:39Z",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
     {
@@ -1238,9 +1241,10 @@
           "publisherDomainMatchesOfficial": true
         }
       ],
-      "ok": true,
-      "checkedAt": "2026-11-16T15:17:40Z",
-      "error": "",
+      "ok": false,
+      "checkedAt": "2026-11-16T23:48:46Z",
+      "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）",
+      "lastSuccessAt": "2026-11-16T15:17:40Z",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
     {
@@ -1380,9 +1384,10 @@
           "publisherDomainMatchesOfficial": true
         }
       ],
-      "ok": true,
-      "checkedAt": "2026-11-16T15:17:40Z",
-      "error": "",
+      "ok": false,
+      "checkedAt": "2026-11-16T23:48:46Z",
+      "error": "此检索源本次刷新失败。列表保留最近一次成功结果，请查看其时间戳。（HTTPError）",
+      "lastSuccessAt": "2026-11-16T15:17:40Z",
       "transport": "Google News RSS search index; not a direct official alert feed"
     },
     {
@@ -1456,17 +1461,6 @@
           "publisherDomainMatchesOfficial": true
         },
         {
-          "id": "CBMiTEFVX3lxTE5FOEM0V1ZoY0N5TGdDV0U4SGppalB1NnF4bl9veFVwdnZSdV9leXI3QWJ4RzFiQUNscVlYc2xkQkhfQWh6WlF6bnVYdjA",
-          "title": "Visite - Musée d'Orsay",
-          "description": "Visite Musée d'Orsay",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5FOEM0V1ZoY0N5TGdDV0U4SGppalB1NnF4bl9veFVwdnZSdV9leXI3QWJ4RzFiQUNscVlYc2xkQkhfQWh6WlF6bnVYdjA?oc=5",
-          "source": "Musée d'Orsay",
-          "sourceHost": "www.musee-orsay.fr",
-          "publisherUrl": "https://www.musee-orsay.fr",
-          "publishedAt": "2019-05-23T04:05:54Z",
-          "publisherDomainMatchesOfficial": true
-        },
-        {
           "id": "CBMi1wFBVV95cUxQbnBSeWFwbHl3Tld6NGdoQVF5TzlJSVNkdHI0MGNpS3dIN0d5WHY1M0I5dnh6X2NFdmtwamd5eFVYLWJFSktjZXRKVjMtamNJUklLcmd2ckZ5Z0hrRHJBLWVDRzhMSDYyaUdZN21ha1RtREs2UkpSTVpUZzJGSFlFSXAzOE0zc1k0cFNIVzZsZWhMbHc5SWUyRkxwcFFQSjl1UXprZWRIb05LZ1lFSXd5WXkwdHFoRkxuVF9MMHMxWks5ZTM5c1NoNUdFUTM4dnpCNU84UDNnZw",
           "title": "En attendant sa réouverture, le Centre Pompidou comme vous ne l'avez jamais vu ! - Centre Pompidou",
           "description": "En attendant sa réouverture, le Centre Pompidou comme vous ne l'avez jamais vu ! Centre Pompidou",
@@ -1486,6 +1480,17 @@
           "sourceHost": "www.centrepompidou.fr",
           "publisherUrl": "https://www.centrepompidou.fr",
           "publishedAt": "2025-09-25T15:35:00Z",
+          "publisherDomainMatchesOfficial": true
+        },
+        {
+          "id": "CBMiTEFVX3lxTE5FOEM0V1ZoY0N5TGdDV0U4SGppalB1NnF4bl9veFVwdnZSdV9leXI3QWJ4RzFiQUNscVlYc2xkQkhfQWh6WlF6bnVYdjA",
+          "title": "Visite - Musée d'Orsay",
+          "description": "Visite Musée d'Orsay",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5FOEM0V1ZoY0N5TGdDV0U4SGppalB1NnF4bl9veFVwdnZSdV9leXI3QWJ4RzFiQUNscVlYc2xkQkhfQWh6WlF6bnVYdjA?oc=5",
+          "source": "Musée d'Orsay",
+          "sourceHost": "www.musee-orsay.fr",
+          "publisherUrl": "https://www.musee-orsay.fr",
+          "publishedAt": "2019-05-23T04:05:54Z",
           "publisherDomainMatchesOfficial": true
         },
         {
@@ -1523,7 +1528,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-16T15:17:40Z",
+      "checkedAt": "2026-11-16T23:48:49Z",
       "error": "",
       "transport": "Google News RSS search index; not a direct official alert feed"
     }
@@ -1573,7 +1578,7 @@
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOV3VkZWh2X1BJa2o4U1d4YzNwdUNtalBMSVByS1BpX3RFeWFNRHdDdWtZN3NGQmtRUlJjOTF3WUhhMEs2T0hWWExPMU5KNVVoUXFhT2phdkdJdUswV2VSaU9FcUxCRG1oNjRGRk0yYnZwTUNDbDhsMFRweERQeXo1Z1A3TVZLWHpUR3pvNmFjOVZ0Y29pVVN0d1U4NmpURDJGQ1E?oc=5",
           "publishedAt": "2026-11-16T14:08:00Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         }
       ]
@@ -1605,7 +1610,7 @@
             "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWUo3RTg5dnNkY1VrTmJ4YlAtNV9KXy1sOTZXM08xWk9HZXhrZ0NyRjRSa21Nd0JfUmhqWXlmRVg5RDhZanNUbDhITUpYcGhqYnVlbmpNQjBIZFg1blRsd0ZyN3g5Vmc0MTVOa203cjVGX242MkxWWFR4b3Z1XzRCR243aHdjbTNHRF9SWUFDMGxFaUFVcExN?oc=5",
             "officialDomainMatch": true,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-16T15:17:39Z"
+            "lastSuccessAt": "2026-11-16T23:48:47Z"
           }
         ]
       },
@@ -1620,7 +1625,7 @@
             "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWUo3RTg5dnNkY1VrTmJ4YlAtNV9KXy1sOTZXM08xWk9HZXhrZ0NyRjRSa21Nd0JfUmhqWXlmRVg5RDhZanNUbDhITUpYcGhqYnVlbmpNQjBIZFg1blRsd0ZyN3g5Vmc0MTVOa203cjVGX242MkxWWFR4b3Z1XzRCR243aHdjbTNHRF9SWUFDMGxFaUFVcExN?oc=5",
             "officialDomainMatch": true,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-16T15:17:39Z"
+            "lastSuccessAt": "2026-11-16T23:48:47Z"
           }
         ]
       },
@@ -1643,7 +1648,7 @@
           "publishedAt": "2026-11-15T16:18:22Z",
           "officialDomainMatch": true,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-16T15:17:39Z"
+          "lastSuccessAt": "2026-11-16T23:48:47Z"
         },
         {
           "title": "Grève du 17 novembre à Paris : écoles, fonction publique, cheminots, ce qui nous attend ce mardi - Sortir à Paris",
@@ -1651,7 +1656,7 @@
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOEM4bnk5TnUyd0ZVU04xYlRvZU9WOFpoVzVkTWpNbmVzWnBtcnRfN01Qd0tBOHQ3ZV9USnZmY0NHZWFGb3VtRng2c2RJVG9PZXMwT29INks1dEgyQ2N0SGQyYnY5NHFkVHlqTl9sdkdpcWtJODRZNmoxWnBaR092VFc0RHkwZzNEalhYdXd4d1R0elZlcktHTjhSb0pMTlp6bmdQUHdULW41WkZ5UF9GdEF1aW11VGdpUTMzUUxaa2Q3bjZSLTE1Vk5YdHlsVG5GeXYtajV2Xy13NEMxMktNYzA4ajVkT0llOGlN?oc=5",
           "publishedAt": "2026-11-16T15:13:08Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         },
         {
@@ -1660,7 +1665,7 @@
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMdHVNbXE1bFdYcWliNWJkSE0yR0RKYmJNRXQ1cDVWZmNvT1JLUlpDUVp5U2xIV3hiWlpHRjN1cXRScEdjMzZrV3dlVzFjX0ZUZnJNMjYtN0NRaVZK?oc=5",
           "publishedAt": "2026-10-22T17:25:18Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         }
       ]
@@ -1709,7 +1714,7 @@
           "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSW1lOUhRemEzRlFadG5XTXlZek1KTlRMc0xwTXkzNFpuNndMQlRQUkxnUi0xS1A0NGtNdEFuZUJsZDdKV0lvQUpISGU4aEJGeXFkbzhaRjZVOGd4ZlV3Z0s2X2dGci1ZdHFyWm9nWGt2RzdLaWtZclBMWmkzMFN1ZDdQLUpiY3Z1YjV5WGpXdVBxVFczVnNsRHZqcXBPZWZJTTFPTS10RnpYbzZRdWFjQ1hrMGVDc01XVzZQNjdCZXBhY0JqWm1LMWltc2FfN1JHWWtzWEdrblRUaWht?oc=5",
           "publishedAt": "2026-10-29T07:00:00Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         }
       ]
@@ -1758,7 +1763,7 @@
           "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZzNFTEpQbVQ4OTd3VnlVQWs3ZHQ3MlIxdVBMVm5maTNLUjdpT2J3bDZtLVB6MGxXZjc0dUpxaElORFlmaHFDQVA4UV9Kb253Mk9tS0plbHYyVWhjOGtYd3NpUi1pQ3pBWVhNeXFrUE44N0FNaExFNHMxT1E4TzdablFlaE9EN0lIUmdKR3dNcV9hdDBVNE1rSVNlZDFQdy1HNWVtZXVaWUdEZ2NUc2YxbTZ2YjdWLThacVRBQnJ4djJEUEhCU2xtdWViaVJMaUNaMTI2M3V1UXhtZ3U0SklHa2doRlZCTlFZemN2TG9xZkg?oc=5",
           "publishedAt": "2026-11-14T12:00:00Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         }
       ]
@@ -1790,7 +1795,7 @@
             "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWUo3RTg5dnNkY1VrTmJ4YlAtNV9KXy1sOTZXM08xWk9HZXhrZ0NyRjRSa21Nd0JfUmhqWXlmRVg5RDhZanNUbDhITUpYcGhqYnVlbmpNQjBIZFg1blRsd0ZyN3g5Vmc0MTVOa203cjVGX242MkxWWFR4b3Z1XzRCR243aHdjbTNHRF9SWUFDMGxFaUFVcExN?oc=5",
             "officialDomainMatch": true,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-16T15:17:39Z"
+            "lastSuccessAt": "2026-11-16T23:48:47Z"
           }
         ]
       },
@@ -1805,7 +1810,7 @@
             "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWUo3RTg5dnNkY1VrTmJ4YlAtNV9KXy1sOTZXM08xWk9HZXhrZ0NyRjRSa21Nd0JfUmhqWXlmRVg5RDhZanNUbDhITUpYcGhqYnVlbmpNQjBIZFg1blRsd0ZyN3g5Vmc0MTVOa203cjVGX242MkxWWFR4b3Z1XzRCR243aHdjbTNHRF9SWUFDMGxFaUFVcExN?oc=5",
             "officialDomainMatch": true,
             "currentFeedSuccess": true,
-            "lastSuccessAt": "2026-11-16T15:17:39Z"
+            "lastSuccessAt": "2026-11-16T23:48:47Z"
           }
         ]
       },
@@ -1828,7 +1833,7 @@
           "publishedAt": "2026-11-15T16:18:22Z",
           "officialDomainMatch": true,
           "currentFeedSuccess": true,
-          "lastSuccessAt": "2026-11-16T15:17:39Z"
+          "lastSuccessAt": "2026-11-16T23:48:47Z"
         },
         {
           "title": "Mobilisation du 5 novembre 2026 : préavis de grève - CFDT Interco",
@@ -1836,7 +1841,7 @@
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lNUtxMHNhcHQ1dkZ1S3ZFbEV4QXhNVGh4SVlEcV9yNTFhNW96TjMtMGY5cGM0N3Bfd2NGUFFZX3luNWliaEpEa0JZUElIcEFqZU9ueU9jaFZIZTRabklYa1dkak1ULVBrV3JJSHk3aUs3Y25laGw3a2twdDdXdw?oc=5",
           "publishedAt": "2026-11-05T08:00:00Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         },
         {
@@ -1845,7 +1850,7 @@
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOV0R2TVhaZENFMzZyNzJLRmt4TUF0b0hVZWxlM19OdUY1NFU1YVR4OFJmYmZweE1XYnpEcEJNdllRZUFzb3FRU2NvalF1WWVvOEp6aFZ5LVRseHd3RDBCUk1ZZlMtbWd6QlktVEZPU1ROLS1aMWcxa1gzb2kwTWRLNFJNS3FlTVRCRXdCeUFhS0JzcTV3OUM5VzNTcDhaWWJPRi16OFNzQm5SdjBiOFVBZVEwaUlrU0RpMEN0emMxZmFsME1zRnhvWA?oc=5",
           "publishedAt": "2026-11-05T08:00:00Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         },
         {
@@ -1854,7 +1859,7 @@
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMdHVNbXE1bFdYcWliNWJkSE0yR0RKYmJNRXQ1cDVWZmNvT1JLUlpDUVp5U2xIV3hiWlpHRjN1cXRScEdjMzZrV3dlVzFjX0ZUZnJNMjYtN0NRaVZK?oc=5",
           "publishedAt": "2026-10-22T17:25:18Z",
           "officialDomainMatch": false,
-          "currentFeedSuccess": true,
+          "currentFeedSuccess": false,
           "lastSuccessAt": "2026-11-16T15:17:39Z"
         }
       ]
